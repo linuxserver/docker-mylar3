@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bash
+
+# make folders
+mkdir -p /config/{mylar,scripts}
+
+# copy scripts folder to config
+[[ ! -d /config/scripts/sabnzbd ]] && \
+	cp -pr /app/mylar3/post-processing/* /config/scripts/
+
+# permissions
+chown -R abc:abc \
+	/app/mylar3 \
+	/config
