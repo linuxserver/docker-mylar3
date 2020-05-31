@@ -21,6 +21,7 @@ RUN \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
 	jpeg \
+	nodejs \
 	py3-setuptools \
 	python3 \
 	zlib && \
@@ -50,5 +51,5 @@ RUN \
 COPY root/ /
 
 # ports and volumes
-VOLUME /config /comics /downloads
+VOLUME /config
 EXPOSE 8090
