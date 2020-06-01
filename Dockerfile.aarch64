@@ -22,6 +22,7 @@ RUN \
  apk add --no-cache \
 	jpeg \
 	nodejs \
+	py3-requests \
 	py3-setuptools \
 	python3 \
 	zlib && \

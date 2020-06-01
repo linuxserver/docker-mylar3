@@ -19,7 +19,7 @@ pipeline {
     EXT_GIT_BRANCH = 'master'
     EXT_USER = 'mylar3'
     EXT_REPO = 'mylar3'
-    BUILD_VERSION_ARG = 'MYLAR_RELEASE'
+    BUILD_VERSION_ARG = 'MYLAR3_RELEASE'
     LS_USER = 'linuxserver'
     LS_REPO = 'docker-mylar3'
     CONTAINER_NAME='mylar3'
