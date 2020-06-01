@@ -15,15 +15,13 @@ RUN \
 	jpeg-dev \
 	libffi-dev \
 	py3-cffi \
-	py3-pip \
 	python3-dev \
 	zlib-dev && \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
 	jpeg \
 	nodejs \
-	py3-requests \
-	py3-setuptools \
+	py3-pip \
 	python3 \
 	zlib && \
  pip3 install --no-cache-dir -U \
