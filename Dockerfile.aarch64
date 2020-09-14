@@ -23,6 +23,7 @@ RUN \
 	nodejs \
 	py3-pip \
 	python3 \
+	unrar \
 	zlib && \
  pip3 install --no-cache-dir -U \
 	pip && \
