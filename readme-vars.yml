@@ -34,4 +34,4 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - { date: "30.05.20:", desc: "Initial release."}
+  - { date: "15.09.20:", desc: "Initial release."}
