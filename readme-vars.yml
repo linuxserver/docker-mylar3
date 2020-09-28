@@ -18,8 +18,8 @@ param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "/path/to/data", desc: "Where mylar should store config files." }
-  - { vol_path: "/comics", vol_host_path: "/path/to/comics-folder", desc: "Map to your comics folder." }
-  - { vol_path: "/downloads", vol_host_path: "/path/to/downloads-folder", desc: "Map to your downloads folder." }
+  - { vol_path: "/comics", vol_host_path: "/path/to/comics", desc: "Map to your comics folder." }
+  - { vol_path: "/downloads", vol_host_path: "/path/to/downloads", desc: "Map to your downloads folder." }
 param_usage_include_env: false
 
 param_usage_include_ports: true
@@ -34,4 +34,4 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - { date: "15.09.20:", desc: "Initial release."}
+  - { date: "28.09.20:", desc: "Initial release."}

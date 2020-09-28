@@ -67,8 +67,8 @@ docker create \
   -e PGID=1000 \
   -p 8090:8090 \
   -v /path/to/data:/config \
-  -v /path/to/comics-folder:/comics \
-  -v /path/to/downloads-folder:/downloads \
+  -v /path/to/comics:/comics \
+  -v /path/to/downloads:/downloads \
   --restart unless-stopped \
   linuxserver/mylar3
 ```
@@ -90,8 +90,8 @@ services:
       - PGID=1000
     volumes:
       - /path/to/data:/config
-      - /path/to/comics-folder:/comics
-      - /path/to/downloads-folder:/downloads
+      - /path/to/comics:/comics
+      - /path/to/downloads:/downloads
     ports:
       - 8090:8090
     restart: unless-stopped
@@ -218,4 +218,4 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **15.09.20:** - Initial release.
+* **28.09.20:** - Initial release.
