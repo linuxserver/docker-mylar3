@@ -1,0 +1,37 @@
+---
+
+# project information
+project_name: mylar3
+project_url: "https://github.com/mylar3/mylar3"
+project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar-icon.png"
+project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL."
+project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+
+# supported architectures
+available_architectures:
+  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
+  - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
+
+# container parameters
+param_container_name: "{{ project_name }}"
+param_usage_include_vols: true
+param_volumes:
+  - { vol_path: "/config", vol_host_path: "/path/to/data", desc: "Where mylar should store config files." }
+  - { vol_path: "/comics", vol_host_path: "/path/to/comics", desc: "Map to your comics folder." }
+  - { vol_path: "/downloads", vol_host_path: "/path/to/downloads", desc: "Map to your downloads folder." }
+param_usage_include_env: false
+
+param_usage_include_ports: true
+param_ports:
+  - { external_port: "8090", internal_port: "8090", port_desc: "WebUI" }
+
+# application setup block
+app_setup_block_enabled: true
+app_setup_block: |
+  The web ui for settings etc, is on `<your-ip>:8090`
+  For more detailed setup refer [{{ project_name|capitalize }}]({{ project_url }}).
+
+# changelog
+changelogs:
+  - { date: "28.09.20:", desc: "Initial release."}

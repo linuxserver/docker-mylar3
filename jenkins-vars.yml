@@ -1,0 +1,31 @@
+---
+
+# jenkins variables
+project_name: docker-mylar3
+external_type: github_stable
+release_type: stable
+release_tag: latest
+ls_branch: master
+repo_vars:
+  - EXT_GIT_BRANCH = 'master'
+  - EXT_USER = 'mylar3'
+  - EXT_REPO = 'mylar3'
+  - BUILD_VERSION_ARG = 'MYLAR3_RELEASE'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-mylar3'
+  - CONTAINER_NAME='mylar3'
+  - DOCKERHUB_IMAGE = 'linuxserver/mylar3'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/mylar3'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/mylar3'
+  - DIST_IMAGE = 'alpine'
+  - MULTIARCH='true'
+  - CI='true'
+  - CI_WEB='true'
+  - CI_PORT='8090'
+  - CI_SSL='false'
+  - CI_DELAY='120'
+  - CI_DOCKERENV='TZ=US/Pacific'
+  - CI_AUTH='user:password'
+  - CI_WEBPATH=''
+sponsor_links:
+  - { name: "Mylar3", url: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EWQADB5AMVRFU" }
