@@ -15,14 +15,14 @@ libacl-2.2.53-r0
 libattr-2.4.48-r0
 libbz2-1.0.8-r1
 libc-utils-0.7.2-r3
-libcrypto1.1-1.1.1g-r0
+libcrypto1.1-1.1.1i-r0
 libffi-3.3-r2
 libgcc-9.3.0-r2
 libintl-0.20.2-r0
 libjpeg-turbo-2.0.5-r0
 libjpeg-turbo-utils-2.0.5-r0
 libproc-3.3.16-r0
-libssl1.1-1.1.1g-r0
+libssl1.1-1.1.1i-r0
 libstdc++-9.3.0-r2
 libtls-standalone-2.9.1-r1
 libuv-1.38.1-r0
