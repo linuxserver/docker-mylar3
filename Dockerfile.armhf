@@ -13,6 +13,7 @@ RUN \
 	build-base \
 	curl \
 	jpeg-dev \
+	jq \
 	libffi-dev \
 	py3-cffi \
 	python3-dev \
@@ -29,8 +30,8 @@ RUN \
 	pip && \
  echo "**** install mylar3 ****" && \
  if [ -z ${MYLAR3_RELEASE+x} ]; then \
-	MYLAR3_RELEASE=$(curl -sX GET https://api.github.com/repos/mylar3/mylar3/releases/latest \
-	| awk '/tag_name/{print $4;exit}' FS='[""]'); \
+	MYLAR3_RELEASE=$(curl -sX GET https://api.github.com/repos/mylar3/mylar3/commits/python3-dev \
+	| jq -r '.sha' | cut -c1-8); \
  fi && \
  mkdir /app/mylar3 && \
  curl -o \
