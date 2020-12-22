@@ -13,6 +13,12 @@ available_architectures:
   - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
   - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
 
+# development version
+development_versions: true
+development_versions_items:
+  - { tag: "latest", desc: "Stable Mylar3 releases" }
+  - { tag: "nightly", desc: "Commits to Mylar3 `python3-dev` branch" }
+
 # container parameters
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
@@ -30,8 +36,9 @@ param_ports:
 app_setup_block_enabled: true
 app_setup_block: |
   The web ui for settings etc, is on `<your-ip>:8090`
-  For more detailed setup refer [{{ project_name|capitalize }}]({{ project_url }}).
+  For more detailed setup options, refer to [{{ project_name|capitalize }}]({{ project_url }}).
 
 # changelog
 changelogs:
+  - { date: "21.12.20:", desc: "Release `nightly` tag based on commits to upstream `python3-dev` branch."}
   - { date: "28.09.20:", desc: "Initial release."}
