@@ -230,5 +230,6 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **03.01.21:** - Output mylar log to docker log.
 * **21.12.20:** - Release `nightly` tag based on commits to upstream `python3-dev` branch.
 * **28.09.20:** - Initial release.
