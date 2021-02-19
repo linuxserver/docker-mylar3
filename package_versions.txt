@@ -31,7 +31,7 @@ musl-utils-1.2.2-r0
 ncurses-libs-6.2_p20210109-r0
 ncurses-terminfo-base-6.2_p20210109-r0
 nghttp2-libs-1.42.0-r1
-nodejs-14.15.4-r0
+nodejs-14.15.5-r0
 procps-3.3.16-r0
 py3-appdirs-1.4.4-r1
 py3-cachecontrol-0.12.6-r0
@@ -58,7 +58,7 @@ py3-six-1.15.0-r0
 py3-toml-0.10.2-r0
 py3-urllib3-1.26.2-r1
 py3-webencodings-0.5.1-r3
-python3-3.8.7-r0
+python3-3.8.7-r1
 readline-8.1.0-r0
 s6-ipcserver-2.10.0.0-r0
 scanelf-1.2.8-r0
