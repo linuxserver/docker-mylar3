@@ -40,6 +40,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "25.05.21:", desc: "Add `libwebp` support." }
   - { date: "17.05.21:", desc: "Add linuxserver wheel index." }
   - { date: "23.01.21:", desc: "Rebasing to alpine 3.13." }
   - { date: "03.01.21:", desc: "Output mylar log to docker log."}
