@@ -14,12 +14,14 @@ RUN \
     curl \
     jpeg-dev \
     libffi-dev \
+    libwebp-dev \
     py3-cffi \
     python3-dev \
     zlib-dev && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
     jpeg \
+    libwebp-tools \
     nodejs \
     py3-pip \
     python3 \
