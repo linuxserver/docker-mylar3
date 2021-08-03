@@ -35,7 +35,7 @@ musl-utils-1.2.2-r1
 ncurses-libs-6.2_p20210109-r0
 ncurses-terminfo-base-6.2_p20210109-r0
 nghttp2-libs-1.42.0-r1
-nodejs-14.16.1-r1
+nodejs-14.17.4-r0
 procps-3.3.16-r0
 py3-appdirs-1.4.4-r1
 py3-cachecontrol-0.12.6-r0
