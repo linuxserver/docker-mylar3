@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.13
+FROM ghcr.io/linuxserver/baseimage-alpine:3.14
 
 # set version label
 ARG BUILD_DATE
@@ -42,6 +42,7 @@ RUN \
     /app/mylar3/ --strip-components=1 && \
   cd /app/mylar3 && \
   pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine/ -r requirements.txt && \
+  pip install jaraco.text==3.5.1 && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
