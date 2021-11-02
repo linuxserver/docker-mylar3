@@ -233,6 +233,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **02.11.21:** - Rebase to alpine 3.14.
 * **25.05.21:** - Add `libwebp` support.
 * **17.05.21:** - Add linuxserver wheel index.
 * **23.01.21:** - Rebasing to alpine 3.13.
