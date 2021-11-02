@@ -42,7 +42,7 @@ RUN \
     /app/mylar3/ --strip-components=1 && \
   cd /app/mylar3 && \
   pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine/ -r requirements.txt && \
-  pip install jaraco.text==3.5.1 && \
+  rm -rf lib/pathlib.py && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
