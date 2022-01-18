@@ -8,7 +8,7 @@ c-ares-1.17.2-r0
 ca-certificates-20191127-r5
 ca-certificates-bundle-20191127-r5
 coreutils-8.32-r2
-expat-2.4.1-r0
+expat-2.4.3-r0
 gdbm-1.19-r0
 giflib-5.2.1-r0
 jpeg-9d-r1
