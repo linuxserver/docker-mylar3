@@ -26,8 +26,9 @@ RUN \
     nodejs \
     py3-pip \
     python3 \
-    unrar \
     zlib && \
+  apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.14/main \
+    unrar && \
   pip3 install --no-cache-dir -U \
     pip && \
   echo "**** install mylar3 ****" && \
