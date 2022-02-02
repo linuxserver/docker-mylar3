@@ -69,7 +69,7 @@ This image provides various versions that are available via tags. `latest` tag u
 
 ## Application Setup
 
-The web ui for settings etc, is on `<your-ip>:8090`
+The web ui for settings etc, is on `http://SERVERIP:8090`
 For more detailed setup options, refer to [Mylar3](https://github.com/mylar3/mylar3).
 
 ## Usage
@@ -234,6 +234,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **01.02.22:** - Rebase to alpine 3.15.
 * **02.11.21:** - Rebase to alpine 3.14.
 * **25.05.21:** - Add `libwebp` support.
 * **17.05.21:** - Add linuxserver wheel index.
