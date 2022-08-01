@@ -42,6 +42,7 @@ RUN \
   tar xf /tmp/mylar3.tar.gz -C \
     /app/mylar3/ --strip-components=1 && \
   cd /app/mylar3 && \
+  pip install --no-cache-dir pip wheel setuptools Pillow && \
   pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.15/ -r requirements.txt && \
   echo "**** cleanup ****" && \
   apk del --purge \
