@@ -234,6 +234,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **11.10.22:** - Rebase to alpine 3.16 and upgrade to s6v3.
 * **01.02.22:** - Rebase to alpine 3.15.
 * **02.11.21:** - Rebase to alpine 3.14.
 * **25.05.21:** - Add `libwebp` support.

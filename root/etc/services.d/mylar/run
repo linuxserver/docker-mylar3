@@ -1,5 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-exec \
-    s6-setuidgid abc python3 /app/mylar3/Mylar.py --nolaunch \
-    --datadir /config/mylar
