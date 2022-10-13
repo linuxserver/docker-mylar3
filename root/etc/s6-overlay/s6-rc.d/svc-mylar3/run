@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+exec \
+    s6-notifyoncheck  -d -n 300 -w 1000 -c "nc -z localhost 8090" \
+        s6-setuidgid abc python3 /app/mylar3/Mylar.py --nolaunch \
+        --datadir /config/mylar
