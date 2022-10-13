@@ -37,7 +37,7 @@ RUN \
     /tmp/unrar --strip-components=1 && \
   cd /tmp/unrar && \
   make && \
-  install -v -m755 unrar /usr/local/bin && \
+  install -v -m755 unrar /usr/bin && \
   echo "**** install mylar3 ****" && \
   if [ -z ${MYLAR3_RELEASE+x} ]; then \
     MYLAR3_RELEASE=$(curl -sX GET https://api.github.com/repos/mylar3/mylar3/releases/latest \
