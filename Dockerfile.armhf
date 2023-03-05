@@ -1,4 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.16
+# syntax=docker/dockerfile:1
+
+FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.17
 
 # set version label
 ARG UNRAR_VERSION=6.1.7
@@ -12,12 +14,9 @@ RUN \
   echo "**** install build dependencies ****" && \
   apk add --no-cache --virtual=build-dependencies \
     build-base \
-    curl \
     jpeg-dev \
-    jq \
     libffi-dev \
     libwebp-dev \
-    py3-cffi \
     python3-dev \
     zlib-dev && \
   echo "**** install runtime packages ****" && \
@@ -25,7 +24,6 @@ RUN \
     jpeg \
     libwebp-tools \
     nodejs \
-    py3-pip \
     python3 \
     zlib && \
   echo "**** install unrar from source ****" && \
@@ -51,9 +49,11 @@ RUN \
   tar xf /tmp/mylar3.tar.gz -C \
     /app/mylar3/ --strip-components=1 && \
   cd /app/mylar3 && \
-  pip3 install --no-cache-dir -U \
-    pip wheel && \
-  pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.16/ -r requirements.txt && \
+  python3 -m ensurepip --upgrade && \
+  pip3 install -U --no-cache-dir \
+    pip \
+    wheel && \
+  pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ -r requirements.txt && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \

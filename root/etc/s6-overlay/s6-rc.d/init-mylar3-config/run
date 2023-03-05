@@ -1,13 +1,14 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 # make folders
 mkdir -p /config/{mylar,scripts}
 
 # copy scripts folder to config
-[[ ! -d /config/scripts/sabnzbd ]] && \
+if [[ ! -f /config/scripts/autoProcessComics.py ]]; then
     cp -pr /app/mylar3/post-processing/* /config/scripts/
+fi
 
 # permissions
-chown -R abc:abc \
-    /app/mylar3 \
+lsiown -R abc:abc \
     /config
