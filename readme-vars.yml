@@ -40,6 +40,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "05.03.23:", desc: "Rebase to Alpine 3.17." }
   - { date: "12.10.22:", desc: "Rebase to alpine 3.16 and upgrade to s6v3." }
   - { date: "01.02.22:", desc: "Rebase to alpine 3.15." }
   - { date: "02.11.21:", desc: "Rebase to alpine 3.14. Remove `pathlib.py`." }
