@@ -34,7 +34,7 @@ icu-libs                72.1-r1                apk
 idna                    3.4                    python  
 inflect                 6.0.2                  python  
 jaraco.classes          3.2.3                  python  
-jaraco.collections      3.8.0                  python  
+jaraco.collections      3.9.0                  python  
 jaraco.context          4.3.0                  python  
 jaraco.functools        3.6.0                  python  
 jaraco.text             3.11.1                 python  
@@ -76,11 +76,11 @@ oniguruma               6.9.8-r0               apk
 pip                     23.0.1                 python  
 portend                 3.1.0                  python  
 procps                  3.3.17-r2              apk     
-pydantic                1.10.6                 python  
+pydantic                1.10.7                 python  
 pystun                  0.1.0                  python  
 python                  3.10.10                binary  
 python3                 3.10.10-r0             apk     
-pytz                    2022.7.1               python  
+pytz                    2023.2                 python  
 pytz-deprecation-shim   0.1.0.post0            python  
 rarfile                 4.0                    python  
 readline                8.2.0-r0               apk     
@@ -97,8 +97,8 @@ sqlite-libs             3.40.1-r0              apk
 ssl_client              1.35.0-r29             apk     
 tempora                 5.2.1                  python  
 typing_extensions       4.5.0                  python  
-tzdata                  2022.7                 python  
 tzdata                  2022f-r1               apk     
+tzdata                  2023.2                 python  
 tzlocal                 4.3                    python  
 urllib3                 1.26.15                python  
 user-agent              0.1.10                 python  
