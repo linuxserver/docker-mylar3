@@ -3,7 +3,7 @@ APScheduler             3.10.1                 python
 CherryPy                18.8.0                 python  
 Mako                    1.2.4                  python  
 MarkupSafe              2.1.2                  python  
-Pillow                  9.4.0                  python  
+Pillow                  9.5.0                  python  
 alpine-baselayout       3.4.0-r0               apk     
 alpine-baselayout-data  3.4.0-r0               apk     
 alpine-keys             2.4-r1                 apk     
@@ -33,8 +33,7 @@ icu-data-en             72.1-r1                apk
 icu-libs                72.1-r1                apk     
 idna                    3.4                    python  
 inflect                 6.0.2                  python  
-jaraco.classes          3.2.3                  python  
-jaraco.collections      3.9.0                  python  
+jaraco.collections      4.0.0                  python  
 jaraco.context          4.3.0                  python  
 jaraco.functools        3.6.0                  python  
 jaraco.text             3.11.1                 python  
@@ -45,7 +44,7 @@ libattr                 2.5.1-r2               apk
 libbsd                  0.11.7-r0              apk     
 libbz2                  1.0.8-r4               apk     
 libc-utils              0.7.2-r3               apk     
-libcrypto3              3.0.8-r0               apk     
+libcrypto3              3.0.8-r1               apk     
 libcurl                 7.88.1-r1              apk     
 libexpat                2.5.0-r0               apk     
 libffi                  3.4.4-r0               apk     
@@ -56,7 +55,7 @@ libjpeg-turbo-utils     2.1.4-r0               apk
 libmd                   1.0.4-r0               apk     
 libpng                  1.6.38-r0              apk     
 libproc                 3.3.17-r2              apk     
-libssl3                 3.0.8-r0               apk     
+libssl3                 3.0.8-r1               apk     
 libstdc++               12.2.1_git20220924-r4  apk     
 libwebp                 1.2.4-r1               apk     
 libwebp-tools           1.2.4-r1               apk     
@@ -80,7 +79,7 @@ pydantic                1.10.7                 python
 pystun                  0.1.0                  python  
 python                  3.10.10                binary  
 python3                 3.10.10-r0             apk     
-pytz                    2023.2                 python  
+pytz                    2023.3                 python  
 pytz-deprecation-shim   0.1.0.post0            python  
 rarfile                 4.0                    python  
 readline                8.2.0-r0               apk     
@@ -97,8 +96,8 @@ sqlite-libs             3.40.1-r0              apk
 ssl_client              1.35.0-r29             apk     
 tempora                 5.2.1                  python  
 typing_extensions       4.5.0                  python  
-tzdata                  2022f-r1               apk     
-tzdata                  2023.2                 python  
+tzdata                  2023.3                 python  
+tzdata                  2023b-r1               apk     
 tzlocal                 4.3                    python  
 urllib3                 1.26.15                python  
 user-agent              0.1.10                 python  
