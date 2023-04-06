@@ -7,11 +7,11 @@ Pillow                  9.5.0                  python
 alpine-baselayout       3.4.0-r0               apk     
 alpine-baselayout-data  3.4.0-r0               apk     
 alpine-keys             2.4-r1                 apk     
-alpine-release          3.17.2-r0              apk     
+alpine-release          3.17.3-r0              apk     
 apk-tools               2.12.10-r1             apk     
 autocommand             2.2.2                  python  
 bash                    5.2.15-r0              apk     
-beautifulsoup4          4.12.0                 python  
+beautifulsoup4          4.12.1                 python  
 brotli-libs             1.0.9-r9               apk     
 busybox                 1.35.0                 binary  
 busybox                 1.35.0-r29             apk     
@@ -32,8 +32,8 @@ giflib                  5.2.1-r2               apk
 icu-data-en             72.1-r1                apk     
 icu-libs                72.1-r1                apk     
 idna                    3.4                    python  
-inflect                 6.0.2                  python  
-jaraco.collections      4.0.0                  python  
+inflect                 6.0.4                  python  
+jaraco.collections      4.1.0                  python  
 jaraco.context          4.3.0                  python  
 jaraco.functools        3.6.0                  python  
 jaraco.text             3.11.1                 python  
@@ -44,7 +44,7 @@ libattr                 2.5.1-r2               apk
 libbsd                  0.11.7-r0              apk     
 libbz2                  1.0.8-r4               apk     
 libc-utils              0.7.2-r3               apk     
-libcrypto3              3.0.8-r1               apk     
+libcrypto3              3.0.8-r3               apk     
 libcurl                 7.88.1-r1              apk     
 libexpat                2.5.0-r0               apk     
 libffi                  3.4.4-r0               apk     
@@ -55,7 +55,7 @@ libjpeg-turbo-utils     2.1.4-r0               apk
 libmd                   1.0.4-r0               apk     
 libpng                  1.6.38-r0              apk     
 libproc                 3.3.17-r2              apk     
-libssl3                 3.0.8-r1               apk     
+libssl3                 3.0.8-r3               apk     
 libstdc++               12.2.1_git20220924-r4  apk     
 libwebp                 1.2.4-r1               apk     
 libwebp-tools           1.2.4-r1               apk     
@@ -77,8 +77,8 @@ portend                 3.1.0                  python
 procps                  3.3.17-r2              apk     
 pydantic                1.10.7                 python  
 pystun                  0.1.0                  python  
-python                  3.10.10                binary  
-python3                 3.10.10-r0             apk     
+python                  3.10.11                binary  
+python3                 3.10.11-r0             apk     
 pytz                    2023.3                 python  
 pytz-deprecation-shim   0.1.0.post0            python  
 rarfile                 4.0                    python  
@@ -97,7 +97,7 @@ ssl_client              1.35.0-r29             apk
 tempora                 5.2.1                  python  
 typing_extensions       4.5.0                  python  
 tzdata                  2023.3                 python  
-tzdata                  2023b-r1               apk     
+tzdata                  2023c-r0               apk     
 tzlocal                 4.3                    python  
 urllib3                 1.26.15                python  
 user-agent              0.1.10                 python  
