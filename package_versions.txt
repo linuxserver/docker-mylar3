@@ -11,7 +11,7 @@ alpine-release          3.17.3-r0              apk
 apk-tools               2.12.10-r1             apk     
 autocommand             2.2.2                  python  
 bash                    5.2.15-r0              apk     
-beautifulsoup4          4.12.1                 python  
+beautifulsoup4          4.12.2                 python  
 brotli-libs             1.0.9-r9               apk     
 busybox                 1.35.0                 binary  
 busybox                 1.35.0-r29             apk     
