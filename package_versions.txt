@@ -99,7 +99,7 @@ typing_extensions       4.5.0                  python
 tzdata                  2023.3                 python  
 tzdata                  2023c-r0               apk     
 tzlocal                 4.3                    python  
-urllib3                 2.0.2                  python  
+urllib3                 1.26.15                python  
 user-agent              0.1.10                 python  
 user-agent2             2021.12.11             python  
 utmps-libs              0.1.2.0-r1             apk     
