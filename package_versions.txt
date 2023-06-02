@@ -33,7 +33,7 @@ icu-data-en             72.1-r1                apk
 icu-libs                72.1-r1                apk     
 idna                    3.4                    python  
 inflect                 6.0.4                  python  
-jaraco.collections      4.1.0                  python  
+jaraco.collections      4.2.0                  python  
 jaraco.context          4.3.0                  python  
 jaraco.functools        3.7.0                  python  
 jaraco.text             3.11.1                 python  
@@ -94,7 +94,7 @@ soupsieve               2.4.1                  python
 sqlite-libs             3.40.1-r0              apk     
 ssl_client              1.35.0-r29             apk     
 tempora                 5.2.2                  python  
-typing_extensions       4.6.2                  python  
+typing_extensions       4.6.3                  python  
 tzdata                  2023c-r0               apk     
 tzlocal                 5.0.1                  python  
 urllib3                 1.26.16                python  
