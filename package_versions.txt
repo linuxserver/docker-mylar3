@@ -93,7 +93,7 @@ skalibs                 2.12.0.1-r0            apk
 soupsieve               2.4.1                  python  
 sqlite-libs             3.40.1-r0              apk     
 ssl_client              1.35.0-r29             apk     
-tempora                 5.2.2                  python  
+tempora                 5.3.0                  python  
 typing_extensions       4.6.3                  python  
 tzdata                  2023c-r0               apk     
 tzlocal                 5.0.1                  python  
