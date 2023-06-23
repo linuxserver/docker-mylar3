@@ -7,7 +7,7 @@ Pillow                  9.5.0                  python
 alpine-baselayout       3.4.0-r0               apk     
 alpine-baselayout-data  3.4.0-r0               apk     
 alpine-keys             2.4-r1                 apk     
-alpine-release          3.17.3-r0              apk     
+alpine-release          3.17.4-r0              apk     
 apk-tools               2.12.10-r1             apk     
 autocommand             2.2.2                  python  
 bash                    5.2.15-r0              apk     
@@ -64,13 +64,13 @@ more-itertools          9.1.0                  python
 mpdecimal               2.5.1-r1               apk     
 musl                    1.2.3-r5               apk     
 musl-utils              1.2.3-r5               apk     
-natsort                 8.3.1                  python  
+natsort                 8.4.0                  python  
 ncurses-libs            6.3_p20221119-r1       apk     
 ncurses-terminfo-base   6.3_p20221119-r1       apk     
 netcat-openbsd          1.130-r4               apk     
 nghttp2-libs            1.51.0-r0              apk     
-node                    18.16.0                binary  
-nodejs                  18.16.0-r0             apk     
+node                    18.16.1                binary  
+nodejs                  18.16.1-r0             apk     
 oniguruma               6.9.8-r0               apk     
 pip                     23.1.2                 python  
 portend                 3.1.0                  python  
