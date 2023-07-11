@@ -33,6 +33,7 @@ app_setup_block: |
   For more detailed setup options, refer to [{{ project_name|capitalize }}]({{ project_url }}).
 # changelog
 changelogs:
+  - {date: "11.07.23:", desc: "Rebase to Alpine 3.18"}
   - {date: "07.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "05.03.23:", desc: "Rebase to Alpine 3.17."}
   - {date: "12.10.22:", desc: "Rebase to alpine 3.16 and upgrade to s6v3."}
