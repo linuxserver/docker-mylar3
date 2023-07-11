@@ -237,6 +237,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **11.07.23:** - Rebase to Alpine 3.18
 * **07.07.23:** - Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 * **05.03.23:** - Rebase nightly to Alpine 3.17.
 * **13.10.22:** - Move unrar to /usr/bin for backwards compatibility.
