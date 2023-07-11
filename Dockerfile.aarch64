@@ -53,7 +53,7 @@ RUN \
   pip install -U --no-cache-dir \
     pip \
     wheel && \
-  pip3 install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18/ -r requirements.txt && \
+  pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18/ -r requirements.txt && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
