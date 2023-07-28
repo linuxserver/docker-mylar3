@@ -67,7 +67,7 @@ libwebp-tools           1.3.1-r0                apk
 linux-pam               1.5.2-r10               apk     
 more-itertools          10.0.0                  python  
 mpdecimal               2.5.1-r2                apk     
-musl                    1.2.4-r0                apk     
+musl                    1.2.4-r1                apk     
 musl-utils              1.2.4-r0                apk     
 natsort                 8.4.0                   python  
 ncurses-terminfo-base   6.4_p20230506-r0        apk     
