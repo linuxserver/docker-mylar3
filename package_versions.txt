@@ -1,5 +1,5 @@
 NAME                        VERSION                 TYPE   
-APScheduler                 3.10.1                  python  
+APScheduler                 3.10.3                  python  
 CherryPy                    18.8.0                  python  
 Mako                        1.2.4                   python  
 MarkupSafe                  2.1.3                   python  
@@ -9,7 +9,7 @@ Simple Launcher Executable  1.1.0.14                dotnet
 alpine-baselayout           3.4.3-r1                apk     
 alpine-baselayout-data      3.4.3-r1                apk     
 alpine-keys                 2.4-r1                  apk     
-alpine-release              3.18.2-r0               apk     
+alpine-release              3.18.3-r0               apk     
 annotated-types             0.5.0                   python  
 apk-tools                   2.14.0-r2               apk     
 autocommand                 2.2.2                   python  
@@ -75,7 +75,6 @@ natsort                     8.4.0                   python
 ncurses-terminfo-base       6.4_p20230506-r0        apk     
 netcat-openbsd              1.219-r1                apk     
 nghttp2-libs                1.55.1-r0               apk     
-node                        18.17.0                 binary  
 nodejs                      18.17.0-r0              apk     
 oniguruma                   6.9.8-r1                apk     
 pip                         23.2.1                  python  
@@ -85,7 +84,6 @@ pyc                         0.1-r0                  apk
 pydantic                    2.1.1                   python  
 pydantic_core               2.4.0                   python  
 pystun                      0.1.0                   python  
-python                      3.11.4                  binary  
 python3                     3.11.4-r0               apk     
 python3-pyc                 3.11.4-r0               apk     
 python3-pycache-pyc0        3.11.4-r0               apk     
