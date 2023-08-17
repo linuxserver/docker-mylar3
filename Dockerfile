@@ -1,9 +1,10 @@
 # syntax=docker/dockerfile:1
 
+FROM ghcr.io/linuxserver/unrar:latest as unrar
+
 FROM ghcr.io/linuxserver/baseimage-alpine:3.18
 
 # set version label
-ARG UNRAR_VERSION=6.2.10
 ARG BUILD_DATE
 ARG VERSION
 ARG MYLAR3_RELEASE
@@ -26,17 +27,6 @@ RUN \
     nodejs \
     python3 \
     zlib && \
-  echo "**** install unrar from source ****" && \
-  mkdir /tmp/unrar && \
-  curl -o \
-    /tmp/unrar.tar.gz -L \
-    "https://www.rarlab.com/rar/unrarsrc-${UNRAR_VERSION}.tar.gz" && \  
-  tar xf \
-    /tmp/unrar.tar.gz -C \
-    /tmp/unrar --strip-components=1 && \
-  cd /tmp/unrar && \
-  make && \
-  install -v -m755 unrar /usr/bin && \
   echo "**** install mylar3 ****" && \
   if [ -z ${MYLAR3_RELEASE+x} ]; then \
     MYLAR3_RELEASE=$(curl -sX GET https://api.github.com/repos/mylar3/mylar3/releases/latest \
@@ -63,6 +53,9 @@ RUN \
 
 # add local files
 COPY root/ /
+
+# add unrar
+COPY --from=unrar /usr/bin/unrar-alpine /usr/bin/unrar
 
 # ports and volumes
 VOLUME /config
