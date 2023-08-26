@@ -37,7 +37,7 @@ idna                        3.4                     python
 inflect                     7.0.0                   python  
 jaraco.collections          4.3.0                   python  
 jaraco.context              4.3.0                   python  
-jaraco.functools            3.8.1                   python  
+jaraco.functools            3.9.0                   python  
 jaraco.text                 3.11.1                  python  
 jpeg                        9e-r1                   apk     
 jq                          1.6-r3                  apk     
