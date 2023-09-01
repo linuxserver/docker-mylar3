@@ -83,9 +83,9 @@ pyc                         0.1-r0                  apk
 pydantic                    2.3.0                   python  
 pydantic_core               2.6.3                   python  
 pystun                      0.1.0                   python  
-python3                     3.11.4-r0               apk     
-python3-pyc                 3.11.4-r0               apk     
-python3-pycache-pyc0        3.11.4-r0               apk     
+python3                     3.11.5-r0               apk     
+python3-pyc                 3.11.5-r0               apk     
+python3-pycache-pyc0        3.11.5-r0               apk     
 pytz                        2023.3                  python  
 rarfile                     4.0                     python  
 readline                    8.2.1-r1                apk     
