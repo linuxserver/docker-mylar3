@@ -9,7 +9,7 @@ Simple Launcher Executable  1.1.0.14                dotnet
 alpine-baselayout           3.4.3-r1                apk     
 alpine-baselayout-data      3.4.3-r1                apk     
 alpine-keys                 2.4-r1                  apk     
-alpine-release              3.18.3-r0               apk     
+alpine-release              3.18.4-r0               apk     
 annotated-types             0.5.0                   python  
 apk-tools                   2.14.0-r2               apk     
 autocommand                 2.2.2                   python  
@@ -23,7 +23,7 @@ ca-certificates             20230506-r0             apk
 ca-certificates-bundle      20230506-r0             apk     
 certifi                     2023.7.22               python  
 cfscrape                    2.1.1                   python  
-charset-normalizer          3.2.0                   python  
+charset-normalizer          3.3.0                   python  
 cheroot                     8.2.1                   python  
 configparser                6.0.0                   python  
 coreutils                   9.3-r1                  apk     
@@ -83,9 +83,9 @@ pyc                         0.1-r0                  apk
 pydantic                    2.4.2                   python  
 pydantic_core               2.10.1                  python  
 pystun                      0.1.0                   python  
-python3                     3.11.5-r0               apk     
-python3-pyc                 3.11.5-r0               apk     
-python3-pycache-pyc0        3.11.5-r0               apk     
+python3                     3.11.6-r0               apk     
+python3-pyc                 3.11.6-r0               apk     
+python3-pycache-pyc0        3.11.6-r0               apk     
 pytz                        2023.3.post1            python  
 rarfile                     4.1                     python  
 readline                    8.2.1-r1                apk     
@@ -103,8 +103,8 @@ ssl_client                  1.36.1-r2               apk
 tempora                     5.5.0                   python  
 typing_extensions           4.8.0                   python  
 tzdata                      2023c-r1                apk     
-tzlocal                     5.0.1                   python  
-urllib3                     1.26.16                 python  
+tzlocal                     5.1                     python  
+urllib3                     1.26.17                 python  
 user-agent                  0.1.10                  python  
 user-agent2                 2021.12.11              python  
 utmps-libs                  0.1.2.1-r1              apk     
