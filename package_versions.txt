@@ -21,7 +21,7 @@ busybox-binsh             1.36.1-r5               apk
 c-ares                    1.19.1-r0               apk     
 ca-certificates           20230506-r0             apk     
 ca-certificates-bundle    20230506-r0             apk     
-certifi                   2023.7.22               python  
+certifi                   2023.11.17              python  
 cfscrape                  2.1.1                   python  
 charset-normalizer        3.3.2                   python  
 cheroot                   8.2.1                   python  
