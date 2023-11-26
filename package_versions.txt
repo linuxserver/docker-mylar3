@@ -108,7 +108,7 @@ urllib3                   1.26.18                 python
 user-agent                0.1.10                  python  
 user-agent2               2021.12.11              python  
 utmps-libs                0.1.2.1-r1              apk     
-wheel                     0.41.3                  python  
+wheel                     0.42.0                  python  
 xz-libs                   5.4.3-r0                apk     
 zc.lockfile               3.0.post1               python  
 zlib                      1.2.13-r1               apk     
