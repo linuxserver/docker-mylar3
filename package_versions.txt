@@ -80,8 +80,8 @@ pip                     23.3.2                  python
 portend                 3.2.0                   python  
 procps-ng               4.0.4-r0                apk     
 pyc                     0.1-r0                  apk     
-pydantic                2.5.2                   python  
-pydantic_core           2.14.5                  python  
+pydantic                2.5.3                   python  
+pydantic_core           2.14.6                  python  
 pystun                  0.1.0                   python  
 python3                 3.11.6-r0               apk     
 python3-pyc             3.11.6-r0               apk     
