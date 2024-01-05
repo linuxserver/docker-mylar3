@@ -3,7 +3,6 @@ APScheduler             3.10.4                  python
 CherryPy                18.9.0                  python  
 Mako                    1.3.0                   python  
 MarkupSafe              2.1.3                   python  
-Pillow                  10.1.0                  python  
 PySocks                 1.7.1                   python  
 Simple Launcher         1.1.0.14                dotnet  
 alpine-baselayout       3.4.3-r1                apk     
@@ -76,6 +75,7 @@ netcat-openbsd          1.219-r1                apk
 nghttp2-libs            1.57.0-r0               apk     
 nodejs                  18.18.2-r0              apk     
 oniguruma               6.9.8-r1                apk     
+pillow                  10.2.0                  python  
 pip                     23.3.2                  python  
 portend                 3.2.0                   python  
 procps-ng               4.0.4-r0                apk     
@@ -102,7 +102,7 @@ sqlite-libs             3.41.2-r2               apk
 ssl_client              1.36.1-r5               apk     
 tempora                 5.5.0                   python  
 typing_extensions       4.9.0                   python  
-tzdata                  2023c-r1                apk     
+tzdata                  2023d-r0                apk     
 tzlocal                 5.2                     python  
 urllib3                 1.26.18                 python  
 user-agent              0.1.10                  python  
