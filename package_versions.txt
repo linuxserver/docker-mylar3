@@ -22,6 +22,7 @@ c-ares                  1.24.0-r0              apk
 ca-certificates         20230506-r0            apk     
 ca-certificates-bundle  20230506-r0            apk     
 certifi                 2023.11.17             python  
+cfscrape                2.1.1                  python  
 charset-normalizer      3.3.2                  python  
 cheroot                 10.0.0                 python  
 configparser            6.0.0                  python  
@@ -89,6 +90,7 @@ pip                     23.3.2                 python
 portend                 3.2.0                  python  
 procps-ng               4.0.4-r0               apk     
 pyc                     3.11.6-r1              apk     
+pycryptodome            3.20.0                 python  
 pydantic                2.5.3                  python  
 pydantic_core           2.14.6                 python  
 pystun                  0.1.0                  python  
