@@ -13,7 +13,7 @@ annotated-types         0.6.0                   python
 apk-tools               2.14.0-r2               apk     
 autocommand             2.2.2                   python  
 bash                    5.2.15-r5               apk     
-beautifulsoup4          4.12.2                  python  
+beautifulsoup4          4.12.3                  python  
 brotli-libs             1.0.9-r14               apk     
 busybox                 1.36.1-r5               apk     
 busybox-binsh           1.36.1-r5               apk     
@@ -98,7 +98,7 @@ simplejson              3.19.2                  python
 six                     1.16.0                  python  
 skalibs                 2.13.1.1-r1             apk     
 soupsieve               2.5                     python  
-sqlite-libs             3.41.2-r2               apk     
+sqlite-libs             3.41.2-r3               apk     
 ssl_client              1.36.1-r5               apk     
 tempora                 5.5.0                   python  
 typing_extensions       4.9.0                   python  
