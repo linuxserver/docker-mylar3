@@ -2,7 +2,7 @@ NAME                    VERSION                TYPE
 APScheduler             3.10.4                 python  
 CherryPy                18.9.0                 python  
 Mako                    1.3.2                  python  
-MarkupSafe              2.1.4                  python  
+MarkupSafe              2.1.5                  python  
 PySocks                 1.7.1                  python  
 Simple Launcher         1.1.0.14               dotnet  
 ada-libs                2.7.4-r0               apk     
@@ -86,13 +86,13 @@ nodejs                  20.11.0-r0             apk
 oniguruma               6.9.9-r0               apk     
 packaging               23.2                   python  
 pillow                  10.2.0                 python  
-pip                     23.3.2                 python  
+pip                     24.0                   python  
 portend                 3.2.0                  python  
 procps-ng               4.0.4-r0               apk     
 pyc                     3.11.6-r1              apk     
 pycryptodome            3.20.0                 python  
-pydantic                2.6.0                  python  
-pydantic_core           2.16.1                 python  
+pydantic                2.6.1                  python  
+pydantic_core           2.16.2                 python  
 pystun                  0.1.0                  python  
 python3                 3.11.6-r1              apk     
 python3-pyc             3.11.6-r1              apk     
@@ -114,7 +114,7 @@ ssl_client              1.36.1-r15             apk
 tempora                 5.5.0                  python  
 tenacity                8.2.3                  python  
 typing_extensions       4.9.0                  python  
-tzdata                  2023d-r0               apk     
+tzdata                  2024a-r0               apk     
 tzlocal                 5.2                    python  
 urllib3                 1.26.18                python  
 user-agent              0.1.10                 python  
