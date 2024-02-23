@@ -88,13 +88,13 @@ pillow                  10.2.0                 python
 pip                     24.0                   python  
 portend                 3.2.0                  python  
 procps-ng               4.0.4-r0               apk     
-pyc                     3.11.6-r1              apk     
+pyc                     3.11.8-r0              apk     
 pydantic                2.6.1                  python  
 pydantic_core           2.16.2                 python  
 pystun                  0.1.0                  python  
-python3                 3.11.6-r1              apk     
-python3-pyc             3.11.6-r1              apk     
-python3-pycache-pyc0    3.11.6-r1              apk     
+python3                 3.11.8-r0              apk     
+python3-pyc             3.11.8-r0              apk     
+python3-pycache-pyc0    3.11.8-r0              apk     
 pytz                    2024.1                 python  
 rarfile                 4.1                    python  
 readline                8.2.1-r2               apk     
@@ -109,7 +109,7 @@ skalibs                 2.14.0.1-r0            apk
 soupsieve               2.5                    python  
 sqlite-libs             3.44.2-r0              apk     
 ssl_client              1.36.1-r15             apk     
-tempora                 5.5.0                  python  
+tempora                 5.5.1                  python  
 typing_extensions       4.9.0                  python  
 tzdata                  2024a-r0               apk     
 tzlocal                 5.2                    python  
