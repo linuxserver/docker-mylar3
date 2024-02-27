@@ -25,7 +25,7 @@ certifi                 2024.2.2               python
 cfscrape                2.1.1                  python  
 charset-normalizer      3.3.2                  python  
 cheroot                 10.0.0                 python  
-configparser            6.0.0                  python  
+configparser            6.0.1                  python  
 coreutils               9.4-r2                 apk     
 coreutils-env           9.4-r2                 apk     
 coreutils-fmt           9.4-r2                 apk     
@@ -91,8 +91,8 @@ portend                 3.2.0                  python
 procps-ng               4.0.4-r0               apk     
 pyc                     3.11.8-r0              apk     
 pycryptodome            3.20.0                 python  
-pydantic                2.6.1                  python  
-pydantic_core           2.16.2                 python  
+pydantic                2.6.2                  python  
+pydantic_core           2.16.3                 python  
 pystun                  0.1.0                  python  
 python3                 3.11.8-r0              apk     
 python3-pyc             3.11.8-r0              apk     
@@ -113,7 +113,7 @@ sqlite-libs             3.44.2-r0              apk
 ssl_client              1.36.1-r15             apk     
 tempora                 5.5.1                  python  
 tenacity                8.2.3                  python  
-typing_extensions       4.9.0                  python  
+typing_extensions       4.10.0                 python  
 tzdata                  2024a-r0               apk     
 tzlocal                 5.2                    python  
 urllib3                 1.26.18                python  
