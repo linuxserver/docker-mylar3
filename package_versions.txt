@@ -12,7 +12,7 @@ alpine-keys             2.4-r1                 apk
 alpine-release          3.19.1-r0              apk                      
 apk-tools               2.14.4-r0              apk                      
 autocommand             2.2.2                  python                   
-backports.tarfile       1.1.0                  python                   
+backports.tarfile       1.1.1                  python                   
 bash                    5.2.21-r0              apk                      
 beautifulsoup4          4.12.3                 python                   
 brotli-libs             1.1.0-r1               apk                      
@@ -24,7 +24,7 @@ ca-certificates-bundle  20240226-r0            apk
 certifi                 2024.2.2               python                   
 cfscrape                2.1.1                  python                   
 charset-normalizer      3.3.2                  python                   
-cheroot                 10.0.0                 python                   
+cheroot                 10.0.1                 python                   
 configparser            7.0.0                  python                   
 coreutils               9.4-r2                 apk                      
 coreutils-env           9.4-r2                 apk                      
@@ -38,7 +38,7 @@ giflib                  5.2.2-r0               apk
 icu-data-en             74.1-r0                apk                      
 icu-libs                74.1-r0                apk                      
 idna                    3.7                    python                   
-inflect                 7.2.0                  python                   
+inflect                 7.2.1                  python                   
 jaraco.collections      5.0.1                  python                   
 jaraco.context          5.3.0                  python                   
 jaraco.functools        4.0.1                  python                   
