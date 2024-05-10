@@ -21,6 +21,7 @@ busybox-binsh           1.36.1-r15             apk
 c-ares                  1.27.0-r0              apk                      
 ca-certificates         20240226-r0            apk                      
 ca-certificates-bundle  20240226-r0            apk                      
+catatonit               0.2.0-r0               apk                      
 certifi                 2024.2.2               python                   
 cfscrape                2.1.1                  python                   
 charset-normalizer      3.3.2                  python                   
@@ -111,7 +112,7 @@ soupsieve               2.5                    python
 sqlite-libs             3.44.2-r0              apk                      
 ssl_client              1.36.1-r15             apk                      
 tempora                 5.5.1                  python                   
-tenacity                8.2.3                  python                   
+tenacity                8.3.0                  python                   
 typeguard               4.2.1                  python                   
 typing_extensions       4.11.0                 python                   
 tzdata                  2024a-r0               apk                      
