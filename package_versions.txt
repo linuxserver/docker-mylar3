@@ -1,7 +1,7 @@
 NAME                    VERSION                TYPE                    
 APScheduler             3.10.4                 python                   
 CherryPy                18.9.0                 python                   
-Mako                    1.3.3                  python                   
+Mako                    1.3.5                  python                   
 MarkupSafe              2.1.5                  python                   
 PySocks                 1.7.1                  python                   
 Simple Launcher         1.1.0.14               dotnet  (+5 duplicates)  
