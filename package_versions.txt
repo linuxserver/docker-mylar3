@@ -22,7 +22,7 @@ c-ares                  1.27.0-r0              apk
 ca-certificates         20240226-r0            apk                      
 ca-certificates-bundle  20240226-r0            apk                      
 catatonit               0.2.0-r0               apk                      
-certifi                 2024.6.2               python                   
+certifi                 2024.7.4               python                   
 cfscrape                2.1.1                  python                   
 charset-normalizer      3.3.2                  python                   
 cheroot                 10.0.1                 python                   
@@ -39,7 +39,7 @@ giflib                  5.2.2-r0               apk
 icu-data-en             74.1-r0                apk                      
 icu-libs                74.1-r0                apk                      
 idna                    3.7                    python                   
-inflect                 7.3.0                  python                   
+inflect                 7.3.1                  python                   
 jaraco.collections      5.0.1                  python                   
 jaraco.context          5.3.0                  python                   
 jaraco.functools        4.0.1                  python                   
@@ -52,7 +52,7 @@ libbase64               0.5.0-r0               apk
 libbsd                  0.11.7-r3              apk                      
 libbz2                  1.0.8-r6               apk                      
 libc-utils              0.7.2-r5               apk                      
-libcrypto3              3.1.5-r0               apk                      
+libcrypto3              3.1.6-r0               apk                      
 libcurl                 8.5.0-r0               apk                      
 libexpat                2.6.2-r0               apk                      
 libffi                  3.4.4-r3               apk                      
@@ -67,7 +67,7 @@ libpanelw               6.4_p20231125-r0       apk
 libpng                  1.6.40-r0              apk                      
 libproc2                4.0.4-r0               apk                      
 libsharpyuv             1.3.2-r0               apk                      
-libssl3                 3.1.5-r0               apk                      
+libssl3                 3.1.6-r0               apk                      
 libstdc++               13.2.1_git20231014-r0  apk                      
 libturbojpeg            3.0.1-r0               apk                      
 libunistring            1.1-r2                 apk                      
@@ -87,7 +87,7 @@ nghttp2-libs            1.58.0-r0              apk
 nodejs                  20.12.1-r0             apk                      
 oniguruma               6.9.9-r0               apk                      
 packaging               24.1                   python                   
-pillow                  10.3.0                 python                   
+pillow                  10.4.0                 python                   
 pip                     24.1.1                 python                   
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
