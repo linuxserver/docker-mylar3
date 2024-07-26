@@ -94,6 +94,7 @@ procps-ng               4.0.4-r0               apk
 pyc                     3.11.9-r0              apk                      
 pycryptodome            3.20.0                 python                   
 pystun                  0.1.0                  python                   
+python-dateutil         2.9.0.post0            python                   
 python3                 3.11.9-r0              apk                      
 python3-pyc             3.11.9-r0              apk                      
 python3-pycache-pyc0    3.11.9-r0              apk                      
@@ -111,7 +112,7 @@ skalibs                 2.14.0.1-r0            apk
 soupsieve               2.5                    python                   
 sqlite-libs             3.44.2-r0              apk                      
 ssl_client              1.36.1-r19             apk                      
-tempora                 5.6.0                  python                   
+tempora                 5.7.0                  python                   
 tenacity                8.5.0                  python                   
 typeguard               4.3.0                  python                   
 typing_extensions       4.12.2                 python                   
