@@ -74,7 +74,7 @@ libwebpmux              1.3.2-r0               apk
 linux-pam               1.5.3-r7               apk                      
 mako                    1.3.5                  python                   
 markupsafe              2.1.5                  python                   
-more-itertools          10.3.0                 python                   
+more-itertools          10.4.0                 python                   
 mpdecimal               2.5.1-r2               apk                      
 musl                    1.2.4_git20230717-r4   apk                      
 musl-utils              1.2.4_git20230717-r4   apk                      
@@ -119,7 +119,7 @@ urllib3                 1.26.19                python
 user-agent              0.1.10                 python                   
 user-agent2             2021.12.11             python                   
 utmps-libs              0.1.2.2-r0             apk                      
-wheel                   0.43.0                 python                   
+wheel                   0.44.0                 python                   
 xz-libs                 5.4.5-r0               apk                      
 zc-lockfile             3.0.post1              python                   
 zlib                    1.3.1-r0               apk                      
