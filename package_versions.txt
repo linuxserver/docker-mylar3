@@ -23,7 +23,7 @@ cfscrape                2.1.1                  python
 charset-normalizer      3.3.2                  python                   
 cheroot                 10.0.1                 python                   
 cherrypy                18.10.0                python                   
-configparser            7.0.0                  python                   
+configparser            7.1.0                  python                   
 coreutils               9.4-r2                 apk                      
 coreutils-env           9.4-r2                 apk                      
 coreutils-fmt           9.4-r2                 apk                      
@@ -37,7 +37,7 @@ icu-data-en             74.1-r0                apk
 icu-libs                74.1-r0                apk                      
 idna                    3.7                    python                   
 jaraco-collections      5.0.1                  python                   
-jaraco-context          5.3.0                  python                   
+jaraco-context          6.0.1                  python                   
 jaraco-functools        4.0.2                  python                   
 jaraco-text             4.0.0                  python                   
 jpeg                    9e-r1                  apk                      
