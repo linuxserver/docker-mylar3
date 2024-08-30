@@ -18,7 +18,7 @@ c-ares                  1.27.0-r0              apk
 ca-certificates         20240226-r0            apk                      
 ca-certificates-bundle  20240226-r0            apk                      
 catatonit               0.2.0-r0               apk                      
-certifi                 2024.7.4               python                   
+certifi                 2024.8.30              python                   
 cfscrape                2.1.1                  python                   
 charset-normalizer      3.3.2                  python                   
 cheroot                 10.0.1                 python                   
@@ -35,8 +35,8 @@ gdbm                    1.23-r1                apk
 giflib                  5.2.2-r0               apk                      
 icu-data-en             74.1-r0                apk                      
 icu-libs                74.1-r0                apk                      
-idna                    3.7                    python                   
-jaraco-collections      5.0.1                  python                   
+idna                    3.8                    python                   
+jaraco-collections      5.1.0                  python                   
 jaraco-context          6.0.1                  python                   
 jaraco-functools        4.0.2                  python                   
 jaraco-text             4.0.0                  python                   
@@ -89,14 +89,14 @@ pillow                  10.4.0                 python
 pip                     24.2                   python                   
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
-pyc                     3.11.9-r0              apk                      
+pyc                     3.11.9-r1              apk                      
 pycryptodome            3.20.0                 python                   
 pysocks                 1.7.1                  python                   
 pystun                  0.1.0                  python                   
 python-dateutil         2.9.0.post0            python                   
-python3                 3.11.9-r0              apk                      
-python3-pyc             3.11.9-r0              apk                      
-python3-pycache-pyc0    3.11.9-r0              apk                      
+python3                 3.11.9-r1              apk                      
+python3-pyc             3.11.9-r1              apk                      
+python3-pycache-pyc0    3.11.9-r1              apk                      
 pytz                    2024.1                 python                   
 rarfile                 4.2                    python                   
 readline                8.2.1-r2               apk                      
@@ -115,7 +115,7 @@ tempora                 5.7.0                  python
 tenacity                9.0.0                  python                   
 tzdata                  2024a-r0               apk                      
 tzlocal                 5.2                    python                   
-urllib3                 1.26.19                python                   
+urllib3                 1.26.20                python                   
 user-agent              0.1.10                 python                   
 user-agent2             2021.12.11             python                   
 utmps-libs              0.1.2.2-r0             apk                      
