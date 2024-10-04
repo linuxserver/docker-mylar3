@@ -38,7 +38,7 @@ icu-libs                74.1-r0                apk
 idna                    3.10                   python                   
 jaraco-collections      5.1.0                  python                   
 jaraco-context          6.0.1                  python                   
-jaraco-functools        4.0.2                  python                   
+jaraco-functools        4.1.0                  python                   
 jaraco-text             4.0.0                  python                   
 jpeg                    9e-r1                  apk                      
 jq                      1.7.1-r0               apk                      
@@ -90,7 +90,7 @@ pip                     24.2                   python
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
 pyc                     3.11.10-r0             apk                      
-pycryptodome            3.20.0                 python                   
+pycryptodome            3.21.0                 python                   
 pysocks                 1.7.1                  python                   
 pystun                  0.1.0                  python                   
 python-dateutil         2.9.0.post0            python                   
