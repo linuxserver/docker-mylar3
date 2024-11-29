@@ -6,7 +6,7 @@ alpine-baselayout-data  3.4.3-r2               apk
 alpine-keys             2.4-r1                 apk                      
 alpine-release          3.19.4-r0              apk                      
 apk-tools               2.14.4-r0              apk                      
-apscheduler             3.10.4                 python                   
+apscheduler             3.11.0                 python                   
 autocommand             2.2.2                  python                   
 backports-tarfile       1.2.0                  python                   
 bash                    5.2.21-r0              apk                      
@@ -119,7 +119,7 @@ urllib3                 1.26.20                python
 user-agent              0.1.10                 python                   
 user-agent2             2021.12.11             python                   
 utmps-libs              0.1.2.2-r0             apk                      
-wheel                   0.45.0                 python                   
+wheel                   0.45.1                 python                   
 xz-libs                 5.4.5-r0               apk                      
 zc-lockfile             3.0.post1              python                   
 zlib                    1.3.1-r0               apk                      
