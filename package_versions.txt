@@ -18,7 +18,7 @@ c-ares                  1.27.0-r0              apk
 ca-certificates         20240226-r0            apk                      
 ca-certificates-bundle  20240226-r0            apk                      
 catatonit               0.2.0-r0               apk                      
-certifi                 2024.8.30              python                   
+certifi                 2024.12.14             python                   
 cfscrape                2.1.1                  python                   
 charset-normalizer      3.4.0                  python                   
 cheroot                 10.0.1                 python                   
@@ -28,7 +28,7 @@ coreutils               9.4-r2                 apk
 coreutils-env           9.4-r2                 apk                      
 coreutils-fmt           9.4-r2                 apk                      
 coreutils-sha512sum     9.4-r2                 apk                      
-curl                    8.9.1-r0               apk                      
+curl                    8.9.1-r1               apk                      
 feedparser              6.0.11                 python                   
 findutils               4.9.0-r5               apk                      
 gdbm                    1.23-r1                apk                      
@@ -48,8 +48,8 @@ libbase64               0.5.0-r0               apk
 libbsd                  0.11.7-r3              apk                      
 libbz2                  1.0.8-r6               apk                      
 libc-utils              0.7.2-r5               apk                      
-libcrypto3              3.1.7-r0               apk                      
-libcurl                 8.9.1-r0               apk                      
+libcrypto3              3.1.7-r1               apk                      
+libcurl                 8.9.1-r1               apk                      
 libexpat                2.6.4-r0               apk                      
 libffi                  3.4.4-r3               apk                      
 libgcc                  13.2.1_git20231014-r0  apk                      
@@ -63,7 +63,7 @@ libpanelw               6.4_p20231125-r0       apk
 libpng                  1.6.44-r0              apk                      
 libproc2                4.0.4-r0               apk                      
 libsharpyuv             1.3.2-r0               apk                      
-libssl3                 3.1.7-r0               apk                      
+libssl3                 3.1.7-r1               apk                      
 libstdc++               13.2.1_git20231014-r0  apk                      
 libturbojpeg            3.0.1-r0               apk                      
 libunistring            1.1-r2                 apk                      
