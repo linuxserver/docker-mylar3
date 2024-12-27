@@ -20,7 +20,7 @@ ca-certificates-bundle  20240226-r0            apk
 catatonit               0.2.0-r0               apk                      
 certifi                 2024.12.14             python                   
 cfscrape                2.1.1                  python                   
-charset-normalizer      3.4.0                  python                   
+charset-normalizer      3.4.1                  python                   
 cheroot                 10.0.1                 python                   
 cherrypy                18.10.0                python                   
 configparser            7.1.0                  python                   
