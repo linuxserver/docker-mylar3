@@ -28,7 +28,7 @@ coreutils               9.4-r2                 apk
 coreutils-env           9.4-r2                 apk                      
 coreutils-fmt           9.4-r2                 apk                      
 coreutils-sha512sum     9.4-r2                 apk                      
-curl                    8.11.1-r0              apk                      
+curl                    8.12.0-r0              apk                      
 feedparser              6.0.11                 python                   
 findutils               4.9.0-r5               apk                      
 gdbm                    1.23-r1                apk                      
@@ -49,7 +49,7 @@ libbsd                  0.11.7-r3              apk
 libbz2                  1.0.8-r6               apk                      
 libc-utils              0.7.2-r5               apk                      
 libcrypto3              3.1.7-r1               apk                      
-libcurl                 8.11.1-r0              apk                      
+libcurl                 8.12.0-r0              apk                      
 libexpat                2.6.4-r0               apk                      
 libffi                  3.4.4-r3               apk                      
 libgcc                  13.2.1_git20231014-r0  apk                      
