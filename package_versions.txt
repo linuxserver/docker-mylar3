@@ -83,7 +83,7 @@ libwebpmux              1.3.2-r0               apk
 linux-pam               1.5.3-r7               apk                      
 mako                    1.3.10                 python                   
 markupsafe              3.0.2                  python                   
-more-itertools          10.7.0                 python                   
+more-itertools          10.8.0                 python                   
 mpdecimal               2.5.1-r2               apk                      
 musl                    1.2.4_git20230717-r5   apk                      
 musl-utils              1.2.4_git20230717-r5   apk                      
