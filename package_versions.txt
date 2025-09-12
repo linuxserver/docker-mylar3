@@ -33,7 +33,7 @@ coreutils-env           9.4-r2                 apk
 coreutils-fmt           9.4-r2                 apk                      
 coreutils-sha512sum     9.4-r2                 apk                      
 curl                    8.12.1-r0              apk                      
-feedparser              6.0.11                 python                   
+feedparser              6.0.12                 python                   
 findutils               4.9.0-r5               apk                      
 gdbm                    1.23-r1                apk                      
 giflib                  5.2.2-r0               apk                      
