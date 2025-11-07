@@ -6,7 +6,7 @@ alpine-baselayout-data  3.4.3-r2               apk
 alpine-keys             2.4-r1                 apk                      
 alpine-release          3.19.9-r0              apk                      
 apk-tools               2.14.4-r0              apk                      
-apscheduler             3.11.0                 python                   
+apscheduler             3.11.1                 python                   
 autocommand             2.2.2                  python  (+1 duplicate)   
 backports-tarfile       1.2.0                  python  (+1 duplicate)   
 bash                    5.2.21-r0              apk                      
@@ -21,7 +21,7 @@ catatonit               0.2.0-r0               apk
 certifi                 2025.10.5              python                   
 cfscrape                2.1.1                  python                   
 charset-normalizer      3.4.4                  python                   
-cheroot                 11.0.0                 python                   
+cheroot                 11.1.1                 python                   
 cherrypy                18.10.0                python                   
 cli                     UNKNOWN                binary                   
 cli-32                  UNKNOWN                binary                   
