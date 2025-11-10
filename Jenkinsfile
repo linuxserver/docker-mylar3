@@ -29,7 +29,7 @@ pipeline {
     DOCKERHUB_IMAGE = 'linuxserver/mylar3'
     DEV_DOCKERHUB_IMAGE = 'lsiodev/mylar3'
     PR_DOCKERHUB_IMAGE = 'lspipepr/mylar3'
-    DIST_IMAGE = 'alpine'
+    DIST_IMAGE = 'ubuntu'
     MULTIARCH='true'
     CI='true'
     CI_WEB='true'
