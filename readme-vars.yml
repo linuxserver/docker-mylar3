@@ -78,6 +78,7 @@ init_diagram: |
   "mylar3:nightly" <- Base Images
 # changelog
 changelogs:
+  - {date: "10.11.25:", desc: "Rebase to Ubuntu Jammy."}
   - {date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
   - {date: "15.08.23:", desc: "Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar)."}
   - {date: "10.08.23:", desc: "Bump unrar to 6.2.10."}
