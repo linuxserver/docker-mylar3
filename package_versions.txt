@@ -18,10 +18,10 @@ c-ares                  1.27.0-r0              apk
 ca-certificates         20250911-r0            apk                      
 ca-certificates-bundle  20250911-r0            apk                      
 catatonit               0.2.0-r0               apk                      
-certifi                 2025.10.5              python                   
+certifi                 2025.11.12             python                   
 cfscrape                2.1.1                  python                   
 charset-normalizer      3.4.4                  python                   
-cheroot                 11.1.1                 python                   
+cheroot                 11.1.2                 python                   
 cherrypy                18.10.0                python                   
 cli                     UNKNOWN                binary                   
 cli-32                  UNKNOWN                binary                   
