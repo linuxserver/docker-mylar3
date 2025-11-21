@@ -49,11 +49,19 @@ RUN \
   pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ -r requirements.txt && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
-  apk del --purge \
-    build-dependencies && \
+  apt-get -y purge \
+    build-essential \
+    libffi-dev \
+    libjpeg9-dev \
+    libwebp-dev \
+    python3-dev \
+    zlib1g-dev && \
+  apt-get -y autoremove && \
   rm -rf \
-    /root/.cache \
-    /tmp/*
+    /tmp/* \
+    /var/lib/apt/lists/* \
+    /var/tmp/* \
+    $HOME/.cache
 
 # add local files
 COPY root/ /
