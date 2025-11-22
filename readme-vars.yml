@@ -74,7 +74,7 @@ init_diagram: |
     svc-mylar3 -> legacy-services
   }
   Base Images: {
-    "baseimage-alpine:3.19"
+    "baseimage-ubuntu:jammy"
   }
   "mylar3:latest" <- Base Images
 # changelog
