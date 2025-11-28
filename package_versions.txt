@@ -150,8 +150,8 @@ libpng16-16             1.6.37-3build5                           deb
 libprocps8              2:3.3.17-6ubuntu2.1                      deb                      
 libpsl5                 0.21.0-1.2build2                         deb                      
 libpython3-stdlib       3.10.6-1~22.04.1                         deb                      
-libpython3.10-minimal   3.10.12-1~22.04.11                       deb                      
-libpython3.10-stdlib    3.10.12-1~22.04.11                       deb                      
+libpython3.10-minimal   3.10.12-1~22.04.12                       deb                      
+libpython3.10-stdlib    3.10.12-1~22.04.12                       deb                      
 libreadline8            8.1.2-1                                  deb                      
 librtmp1                2.4+20151223.gitfa8646d.1-2build4        deb                      
 libsasl2-2              2.1.27+dfsg2-3ubuntu1.2                  deb                      
@@ -243,9 +243,9 @@ python3-minimal         3.10.6-1~22.04.1                         deb
 python3-pip-whl         22.0.2+dfsg-1ubuntu0.7                   deb                      
 python3-setuptools-whl  59.6.0-1.2ubuntu0.22.04.3                deb                      
 python3-venv            3.10.6-1~22.04.1                         deb                      
-python3.10              3.10.12-1~22.04.11                       deb                      
-python3.10-minimal      3.10.12-1~22.04.11                       deb                      
-python3.10-venv         3.10.12-1~22.04.11                       deb                      
+python3.10              3.10.12-1~22.04.12                       deb                      
+python3.10-minimal      3.10.12-1~22.04.12                       deb                      
+python3.10-venv         3.10.12-1~22.04.12                       deb                      
 pytz                    2025.2                                   python                   
 rarfile                 4.2                                      python                   
 readline-common         8.1.2-1                                  deb                      
