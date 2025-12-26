@@ -2,7 +2,7 @@ NAME                    VERSION                                  TYPE
 @types/node             12.20.42                                 npm                      
 Simple Launcher         1.1.0.14                                 binary  (+5 duplicates)  
 adduser                 3.118ubuntu5                             deb                      
-apscheduler             3.11.1                                   python                   
+apscheduler             3.11.2                                   python                   
 apt                     2.4.14                                   deb                      
 apt-utils               2.4.14                                   deb                      
 autocommand             2.2.2                                    python                   
@@ -59,8 +59,8 @@ hostname                3.23ubuntu2                              deb
 idna                    3.11                                     python                   
 init-system-helpers     1.62                                     deb                      
 jaraco-collections      5.2.1                                    python                   
-jaraco-context          6.0.1                                    python                   
-jaraco-functools        4.3.0                                    python                   
+jaraco-context          6.0.2                                    python                   
+jaraco-functools        4.4.0                                    python                   
 jaraco-text             4.0.0                                    python                   
 jq                      1.6-2.1ubuntu3.1                         deb                      
 libacl1                 2.3.1-1                                  deb                      
