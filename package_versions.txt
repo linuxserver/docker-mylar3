@@ -14,7 +14,7 @@ beautifulsoup4          4.14.3                                   python
 bsdutils                1:2.37.2-4ubuntu3.4                      deb                      
 ca-certificates         20240203~22.04.1                         deb                      
 catatonit               0.1.7-1                                  deb                      
-certifi                 2025.11.12                               python                   
+certifi                 2026.1.4                                 python                   
 cfscrape                2.1.1                                    python                   
 charset-normalizer      3.4.4                                    python                   
 cheroot                 11.1.2                                   python                   
@@ -226,7 +226,7 @@ packaging               25.0                                     python
 passwd                  1:4.8.1-2ubuntu2.2                       deb                      
 perl                    5.34.0-3ubuntu1.5                        deb                      
 perl-base               5.34.0-3ubuntu1.5                        deb                      
-pillow                  12.0.0                                   python                   
+pillow                  12.1.0                                   python                   
 pinentry-curses         1.1.1-1build2                            deb                      
 pip                     25.3                                     python                   
 portend                 3.2.1                                    python                   
