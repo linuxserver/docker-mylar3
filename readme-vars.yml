@@ -15,6 +15,7 @@ development_versions: true
 development_versions_items:
   - {tag: "latest", desc: "Stable Mylar3 releases"}
   - {tag: "nightly", desc: "Commits to Mylar3 `python3-dev` branch"}
+  - {tag: "unstable", desc: "Commits to Mylar3 `1000papercuts` branch"}
 # container parameters
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
@@ -78,20 +79,4 @@ init_diagram: |
   "mylar3:nightly" <- Base Images
 # changelog
 changelogs:
-  - {date: "10.11.25:", desc: "Rebase to Ubuntu Jammy."}
-  - {date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
-  - {date: "15.08.23:", desc: "Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar)."}
-  - {date: "10.08.23:", desc: "Bump unrar to 6.2.10."}
-  - {date: "11.07.23:", desc: "Rebase to Alpine 3.18"}
-  - {date: "07.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
-  - {date: "05.03.23:", desc: "Rebase nightly to Alpine 3.17."}
-  - {date: "13.10.22:", desc: "Move unrar to /usr/bin for backwards compatibility."}
-  - {date: "11.10.22:", desc: "Rebase to alpine 3.16 and upgrade to s6v3."}
-  - {date: "01.02.22:", desc: "Rebase to alpine 3.15."}
-  - {date: "02.11.21:", desc: "Rebase to alpine 3.14."}
-  - {date: "25.05.21:", desc: "Add `libwebp` support."}
-  - {date: "17.05.21:", desc: "Add linuxserver wheel index."}
-  - {date: "23.01.21:", desc: "Rebasing to alpine 3.13."}
-  - {date: "03.01.21:", desc: "Output mylar log to docker log."}
-  - {date: "21.12.20:", desc: "Release `nightly` tag based on commits to upstream `python3-dev` branch."}
-  - {date: "28.09.20:", desc: "Initial release."}
+  - {date: "05.02.26:", desc: "Release `unstable` tag based on commits to upstream `1000papercuts` branch."}

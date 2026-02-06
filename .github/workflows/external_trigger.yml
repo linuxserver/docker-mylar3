@@ -7,31 +7,31 @@ permissions:
   contents: read
 
 jobs:
-  external-trigger-nightly:
+  external-trigger-unstable:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.1
 
       - name: External Trigger
-        if: github.ref == 'refs/heads/nightly'
+        if: github.ref == 'refs/heads/unstable'
         env:
           SKIP_EXTERNAL_TRIGGER: ${{ vars.SKIP_EXTERNAL_TRIGGER }}
         run: |
           printf "# External trigger for docker-mylar3\n\n" >> $GITHUB_STEP_SUMMARY
-          if grep -q "^mylar3_nightly_" <<< "${SKIP_EXTERNAL_TRIGGER}"; then
+          if grep -q "^mylar3_unstable_" <<< "${SKIP_EXTERNAL_TRIGGER}"; then
             echo "> [!NOTE]" >> $GITHUB_STEP_SUMMARY
-            echo "> Github organizational variable \`SKIP_EXTERNAL_TRIGGER\` contains \`mylar3_nightly_\`; will skip trigger if version matches." >> $GITHUB_STEP_SUMMARY
-          elif grep -q "^mylar3_nightly" <<< "${SKIP_EXTERNAL_TRIGGER}"; then
+            echo "> Github organizational variable \`SKIP_EXTERNAL_TRIGGER\` contains \`mylar3_unstable_\`; will skip trigger if version matches." >> $GITHUB_STEP_SUMMARY
+          elif grep -q "^mylar3_unstable" <<< "${SKIP_EXTERNAL_TRIGGER}"; then
             echo "> [!WARNING]" >> $GITHUB_STEP_SUMMARY
-            echo "> Github organizational variable \`SKIP_EXTERNAL_TRIGGER\` contains \`mylar3_nightly\`; skipping trigger." >> $GITHUB_STEP_SUMMARY
+            echo "> Github organizational variable \`SKIP_EXTERNAL_TRIGGER\` contains \`mylar3_unstable\`; skipping trigger." >> $GITHUB_STEP_SUMMARY
             exit 0
           fi
           echo "> [!NOTE]" >> $GITHUB_STEP_SUMMARY
-          echo "> External trigger running off of nightly branch. To disable this trigger, add \`mylar3_nightly\` into the Github organizational variable \`SKIP_EXTERNAL_TRIGGER\`." >> $GITHUB_STEP_SUMMARY
+          echo "> External trigger running off of unstable branch. To disable this trigger, add \`mylar3_unstable\` into the Github organizational variable \`SKIP_EXTERNAL_TRIGGER\`." >> $GITHUB_STEP_SUMMARY
           printf "\n## Retrieving external version\n\n" >> $GITHUB_STEP_SUMMARY
-          EXT_RELEASE=$(curl -u "${{ secrets.CR_USER }}:${{ secrets.CR_PAT }}" -sX GET "https://api.github.com/repos/mylar3/mylar3/commits/python3-dev" | jq -r '. | .sha' | cut -c1-8)
+          EXT_RELEASE=$(curl -u "${{ secrets.CR_USER }}:${{ secrets.CR_PAT }}" -sX GET "https://api.github.com/repos/mylar3/mylar3/commits/1000papercuts" | jq -r '. | .sha' | cut -c1-8)
           echo "Type is \`github_commit\`" >> $GITHUB_STEP_SUMMARY
-          if grep -q "^mylar3_nightly_${EXT_RELEASE}" <<< "${SKIP_EXTERNAL_TRIGGER}"; then
+          if grep -q "^mylar3_unstable_${EXT_RELEASE}" <<< "${SKIP_EXTERNAL_TRIGGER}"; then
             echo "> [!WARNING]" >> $GITHUB_STEP_SUMMARY
             echo "> Github organizational variable \`SKIP_EXTERNAL_TRIGGER\` matches current external release; skipping trigger." >> $GITHUB_STEP_SUMMARY
             exit 0
@@ -39,7 +39,7 @@ jobs:
           if [ -z "${EXT_RELEASE}" ] || [ "${EXT_RELEASE}" == "null" ]; then
             echo "> [!WARNING]" >> $GITHUB_STEP_SUMMARY
             echo "> Can't retrieve external version, exiting" >> $GITHUB_STEP_SUMMARY
-            FAILURE_REASON="Can't retrieve external version for mylar3 branch nightly"
+            FAILURE_REASON="Can't retrieve external version for mylar3 branch unstable"
             GHA_TRIGGER_URL="https://github.com/linuxserver/docker-mylar3/actions/runs/${{ github.run_id }}"
             curl -X POST -H "Content-Type: application/json" --data '{"avatar_url": "https://cdn.discordapp.com/avatars/354986384542662657/df91181b3f1cf0ef1592fbe18e0962d7.png","embeds": [{"color": 16711680,
               "description": "**Trigger Failed** \n**Reason:** '"${FAILURE_REASON}"' \n**Trigger URL:** '"${GHA_TRIGGER_URL}"' \n"}],
@@ -50,7 +50,7 @@ jobs:
           echo "Sanitized external version: \`${EXT_RELEASE_SANITIZED}\`" >> $GITHUB_STEP_SUMMARY
           echo "Retrieving last pushed version" >> $GITHUB_STEP_SUMMARY
           image="linuxserver/mylar3"
-          tag="nightly"
+          tag="unstable"
           token=$(curl -sX GET \
             "https://ghcr.io/token?scope=repository%3Alinuxserver%2Fmylar3%3Apull" \
             | jq -r '.token')
@@ -96,7 +96,7 @@ jobs:
           if [ -z "${IMAGE_VERSION}" ]; then
             echo "> [!WARNING]" >> $GITHUB_STEP_SUMMARY
             echo "Can't retrieve last pushed version, exiting" >> $GITHUB_STEP_SUMMARY
-            FAILURE_REASON="Can't retrieve last pushed version for mylar3 tag nightly"
+            FAILURE_REASON="Can't retrieve last pushed version for mylar3 tag unstable"
             curl -X POST -H "Content-Type: application/json" --data '{"avatar_url": "https://cdn.discordapp.com/avatars/354986384542662657/df91181b3f1cf0ef1592fbe18e0962d7.png","embeds": [{"color": 16711680,
               "description": "**Trigger Failed** \n**Reason:** '"${FAILURE_REASON}"' \n"}],
               "username": "Github Actions"}' ${{ secrets.DISCORD_WEBHOOK }}
@@ -106,14 +106,14 @@ jobs:
           if [ "${EXT_RELEASE_SANITIZED}" == "${IMAGE_VERSION}" ]; then
             echo "Sanitized version \`${EXT_RELEASE_SANITIZED}\` already pushed, exiting" >> $GITHUB_STEP_SUMMARY
             exit 0
-          elif [ $(curl -s https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-mylar3/job/nightly/lastBuild/api/json | jq -r '.building') == "true" ]; then
+          elif [ $(curl -s https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-mylar3/job/unstable/lastBuild/api/json | jq -r '.building') == "true" ]; then
             echo "New version \`${EXT_RELEASE}\` found; but there already seems to be an active build on Jenkins; exiting" >> $GITHUB_STEP_SUMMARY
             exit 0
           else
             if [[ "${artifacts_found}" == "false" ]]; then
               echo "> [!WARNING]" >> $GITHUB_STEP_SUMMARY
               echo "> New version detected, but not all artifacts are published yet; skipping trigger" >> $GITHUB_STEP_SUMMARY
-              FAILURE_REASON="New version ${EXT_RELEASE} for mylar3 tag nightly is detected, however not all artifacts are uploaded to upstream release yet. Will try again later."
+              FAILURE_REASON="New version ${EXT_RELEASE} for mylar3 tag unstable is detected, however not all artifacts are uploaded to upstream release yet. Will try again later."
               curl -X POST -H "Content-Type: application/json" --data '{"avatar_url": "https://cdn.discordapp.com/avatars/354986384542662657/df91181b3f1cf0ef1592fbe18e0962d7.png","embeds": [{"color": 9802903,
                 "description": "**Trigger Failed** \n**Reason:** '"${FAILURE_REASON}"' \n"}],
                 "username": "Github Actions"}' ${{ secrets.DISCORD_WEBHOOK }}
@@ -124,7 +124,7 @@ jobs:
                 echo "All artifacts seem to be uploaded." >> $GITHUB_STEP_SUMMARY
               fi
               response=$(curl -iX POST \
-                https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-mylar3/job/nightly/buildWithParameters?PACKAGE_CHECK=false \
+                https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-mylar3/job/unstable/buildWithParameters?PACKAGE_CHECK=false \
                 --user ${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_TOKEN }} | grep -i location | sed "s|^[L|l]ocation: \(.*\)|\1|")
               echo "Jenkins [job queue url](${response%$'\r'})" >> $GITHUB_STEP_SUMMARY
               echo "Sleeping 10 seconds until job starts" >> $GITHUB_STEP_SUMMARY
@@ -139,7 +139,7 @@ jobs:
                 --data-urlencode "description=GHA external trigger https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
                 --data-urlencode "Submit=Submit"
               echo "**** Notifying Discord ****"
-              TRIGGER_REASON="A version change was detected for mylar3 tag nightly. Old version:${IMAGE_VERSION} New version:${EXT_RELEASE_SANITIZED}"
+              TRIGGER_REASON="A version change was detected for mylar3 tag unstable. Old version:${IMAGE_VERSION} New version:${EXT_RELEASE_SANITIZED}"
               curl -X POST -H "Content-Type: application/json" --data '{"avatar_url": "https://cdn.discordapp.com/avatars/354986384542662657/df91181b3f1cf0ef1592fbe18e0962d7.png","embeds": [{"color": 9802903,
                 "description": "**Build Triggered** \n**Reason:** '"${TRIGGER_REASON}"' \n**Build URL:** '"${buildurl}display/redirect"' \n"}],
                 "username": "Github Actions"}' ${{ secrets.DISCORD_WEBHOOK }}
