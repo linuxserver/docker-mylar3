@@ -34,7 +34,7 @@ app_setup_block: |
   For more detailed setup options, refer to [{{ project_name|capitalize }}]({{ project_url }}).
 # init diagram
 init_diagram: |
-  "mylar3:nightly": {
+  "mylar3:unstable": {
     docker-mods
     base {
       fix-attr +\nlegacy cont-init
@@ -76,7 +76,7 @@ init_diagram: |
   Base Images: {
     "baseimage-ubuntu:jammy"
   }
-  "mylar3:nightly" <- Base Images
+  "mylar3:unstable" <- Base Images
 # changelog
 changelogs:
   - {date: "05.02.26:", desc: "Release `unstable` tag based on commits to upstream `1000papercuts` branch."}
