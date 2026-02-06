@@ -16,6 +16,7 @@ development_versions: true
 development_versions_items:
   - {tag: "latest", desc: "Stable Mylar3 releases"}
   - {tag: "nightly", desc: "Commits to Mylar3 `python3-dev` branch"}
+  - {tag: "unstable", desc: "Commits to Mylar3 `1000papercuts` branch"}
 # container parameters
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
@@ -79,6 +80,7 @@ init_diagram: |
   "mylar3:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "05.02.26:", desc: "Release `unstable` tag based on commits to upstream `1000papercuts` branch."}
   - {date: "21.11.25:", desc: "Rebase to Ubuntu Jammy."}
   - {date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
   - {date: "16.08.23:", desc: "Install unrar from [linuxserver repo](https://github.com/linuxserver/docker-unrar)."}
