@@ -147,7 +147,7 @@ libpam0g                1.4.0-11ubuntu2.6                        deb
 libpciaccess0           0.16-3                                   deb                      
 libpcre2-8-0            10.39-3ubuntu0.1                         deb                      
 libpcre3                2:8.39-13ubuntu0.22.04.1                 deb                      
-libpng16-16             1.6.37-3ubuntu0.3                        deb                      
+libpng16-16             1.6.37-3ubuntu0.4                        deb                      
 libprocps8              2:3.3.17-6ubuntu2.1                      deb                      
 libpsl5                 0.21.0-1.2build2                         deb                      
 libpython3-stdlib       3.10.6-1~22.04.1                         deb                      
