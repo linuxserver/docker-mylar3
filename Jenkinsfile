@@ -19,7 +19,7 @@ pipeline {
     DOCKERHUB_TOKEN=credentials('docker-hub-ci-pat')
     QUAYIO_API_TOKEN=credentials('quayio-repo-api-token')
     GIT_SIGNING_KEY=credentials('484fbca6-9a4f-455e-b9e3-97ac98785f5f')
-    EXT_GIT_BRANCH = 'python3-dev'
+    EXT_GIT_BRANCH = '1000papercuts'
     EXT_USER = 'mylar3'
     EXT_REPO = 'mylar3'
     BUILD_VERSION_ARG = 'MYLAR3_RELEASE'
