@@ -14,9 +14,9 @@ available_architectures:
 # development version
 development_versions: true
 development_versions_items:
-  - {tag: "latest", desc: "Stable Mylar3 releases"}
-  - {tag: "nightly", desc: "Commits to Mylar3 `python3-dev` branch"}
-  - {tag: "unstable", desc: "Commits to Mylar3 `1000papercuts` branch"}
+  - {tag: "latest", desc: "Commits to Mylar3 `python3-dev` branch"}
+  - {tag: "nightly", desc: "Commits to Mylar3 `1000papercuts` branch (ubuntu)"}
+  - {tag: "unstable", desc: "Commits to Mylar3 `1000papercuts` branch (alpine)"}
 # container parameters
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
@@ -80,6 +80,7 @@ init_diagram: |
   "mylar3:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "19.02.26:", desc: "Rebase `latest` tag based on commits to upstream `python3-dev` branch. `nightly` will build commits to upstream `1000papercuts` branch. `unstable` tag will also build commits to upstream `1000papercuts` branch, but on alpine 3.23 with python 3.12."}
   - {date: "05.02.26:", desc: "Release `unstable` tag based on commits to upstream `1000papercuts` branch."}
   - {date: "21.11.25:", desc: "Rebase to Ubuntu Jammy."}
   - {date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
