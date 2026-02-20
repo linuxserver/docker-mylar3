@@ -254,7 +254,7 @@ pytz                    2025.2                                   python
 rarfile                 4.2                                      python                   
 readline-common         8.1.2-1                                  deb                      
 requests                2.32.5                                   python                   
-rich                    14.3.2                                   python                   
+rich                    14.3.3                                   python                   
 sed                     4.8-1ubuntu2                             deb                      
 sensible-utils          0.0.17                                   deb                      
 setuptools              59.6.0                                   python                   
