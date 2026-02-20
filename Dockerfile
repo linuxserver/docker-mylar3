@@ -2,7 +2,7 @@
 
 FROM ghcr.io/linuxserver/unrar:latest AS unrar
 
-FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy
+FROM ghcr.io/linuxserver/baseimage-alpine:3.23
 
 # set version label
 ARG BUILD_DATE
@@ -15,21 +15,20 @@ ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
   echo "**** install build dependencies ****" && \
-  apt-get update && \
-  apt-get install -y --no-install-recommends \
-    build-essential \
+  apk add --no-cache --virtual=build-dependencies \
+    build-base \
+    jpeg-dev \
     libffi-dev \
-    libjpeg9-dev \
     libwebp-dev \
     python3-dev \
-    zlib1g-dev && \
+    zlib-dev && \
   echo "**** install runtime packages ****" && \
-  apt-get install -y --no-install-recommends \
-    libjpeg9 \
+  apk add --no-cache \
+    jpeg \
+    libwebp-tools \
     nodejs \
-    python3-venv \
-    webp \
-    zlib1g-dev && \
+    python3 \
+    zlib && \
   echo "**** install mylar3 ****" && \
   if [ -z ${MYLAR3_RELEASE+x} ]; then \
     MYLAR3_RELEASE=$(curl -sX GET https://api.github.com/repos/mylar3/mylar3/commits/1000papercuts \
@@ -46,28 +45,20 @@ RUN \
   pip install -U --no-cache-dir \
     pip \
     wheel && \
-  pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ -r requirements.txt && \
+  pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.23/ -r requirements.txt && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
-  apt-get -y purge \
-    build-essential \
-    libffi-dev \
-    libjpeg9-dev \
-    libwebp-dev \
-    python3-dev \
-    zlib1g-dev && \
-  apt-get -y autoremove && \
+  apk del --purge \
+    build-dependencies && \
   rm -rf \
-    /tmp/* \
-    /var/lib/apt/lists/* \
-    /var/tmp/* \
-    $HOME/.cache
+    $HOME/.cache \
+    /tmp/*
 
 # add local files
 COPY root/ /
 
 # add unrar
-COPY --from=unrar /usr/bin/unrar-ubuntu /usr/bin/unrar
+COPY --from=unrar /usr/bin/unrar-alpine /usr/bin/unrar
 
 # ports and volumes
 VOLUME /config

@@ -60,9 +60,9 @@ This image provides various versions that are available via tags. Please read th
 
 | Tag | Available | Description |
 | :----: | :----: |--- |
-| latest | ✅ | Stable Mylar3 releases |
-| nightly | ✅ | Commits to Mylar3 `python3-dev` branch |
-| unstable | ✅ | Commits to Mylar3 `1000papercuts` branch |
+| latest | ✅ | Commits to Mylar3 `python3-dev` branch |
+| nightly | ✅ | Commits to Mylar3 `1000papercuts` branch (ubuntu) |
+| unstable | ✅ | Commits to Mylar3 `1000papercuts` branch (alpine) |
 
 ## Application Setup
 
@@ -289,4 +289,5 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **19.02.26:** - Rebase `unstable` tag to alpine 3.23.
 * **05.02.26:** - Release `unstable` tag based on commits to upstream `1000papercuts` branch.
