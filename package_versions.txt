@@ -27,7 +27,7 @@ click                   8.3.1                                    python
 configparser            7.2.0                                    python                   
 coreutils               8.32-4.1ubuntu1.2                        deb                      
 cron                    3.0pl1-137ubuntu3                        deb                      
-curl                    7.81.0-1ubuntu1.21                       deb                      
+curl                    7.81.0-1ubuntu1.22                       deb                      
 dash                    0.5.11+git20210903+057cd650a4ed-3build1  deb                      
 debconf                 1.5.79ubuntu1                            deb                      
 debianutils             5.5-1ubuntu2                             deb                      
@@ -81,7 +81,7 @@ libcap-ng0              0.7.9-2.2build3                          deb
 libcap2                 1:2.44-1ubuntu0.22.04.2                  deb                      
 libcom-err2             1.46.5-2ubuntu1.2                        deb                      
 libcrypt1               1:4.4.27-1                               deb                      
-libcurl4                7.81.0-1ubuntu1.21                       deb                      
+libcurl4                7.81.0-1ubuntu1.22                       deb                      
 libdb5.3                5.3.28+dfsg1-0.8ubuntu3                  deb                      
 libdebconfclient0       0.261ubuntu1                             deb                      
 libdeflate0             1.10-2                                   deb                      
@@ -250,7 +250,7 @@ python3-venv            3.10.6-1~22.04.1                         deb
 python3.10              3.10.12-1~22.04.14                       deb                      
 python3.10-minimal      3.10.12-1~22.04.14                       deb                      
 python3.10-venv         3.10.12-1~22.04.14                       deb                      
-pytz                    2025.2                                   python                   
+pytz                    2026.1.post1                             python                   
 rarfile                 4.2                                      python                   
 readline-common         8.1.2-1                                  deb                      
 requests                2.32.5                                   python                   
