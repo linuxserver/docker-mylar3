@@ -16,7 +16,7 @@ ca-certificates         20240203~22.04.1                         deb
 catatonit               0.1.7-1                                  deb                      
 certifi                 2026.2.25                                python                   
 cfscrape                2.1.1                                    python                   
-charset-normalizer      3.4.4                                    python                   
+charset-normalizer      3.4.5                                    python                   
 cheroot                 11.1.2                                   python                   
 cherrypy                18.10.0                                  python                   
 cli                     UNKNOWN                                  binary                   
@@ -60,7 +60,7 @@ hostname                3.23ubuntu2                              deb
 idna                    3.11                                     python                   
 init-system-helpers     1.62                                     deb                      
 jaraco-collections      5.2.1                                    python                   
-jaraco-context          6.1.0                                    python                   
+jaraco-context          6.1.1                                    python                   
 jaraco-functools        4.4.0                                    python                   
 jaraco-text             4.2.0                                    python                   
 jq                      1.6-2.1ubuntu3.1                         deb                      
@@ -151,8 +151,8 @@ libpng16-16             1.6.37-3ubuntu0.4                        deb
 libprocps8              2:3.3.17-6ubuntu2.1                      deb                      
 libpsl5                 0.21.0-1.2build2                         deb                      
 libpython3-stdlib       3.10.6-1~22.04.1                         deb                      
-libpython3.10-minimal   3.10.12-1~22.04.14                       deb                      
-libpython3.10-stdlib    3.10.12-1~22.04.14                       deb                      
+libpython3.10-minimal   3.10.12-1~22.04.15                       deb                      
+libpython3.10-stdlib    3.10.12-1~22.04.15                       deb                      
 libreadline8            8.1.2-1                                  deb                      
 librtmp1                2.4+20151223.gitfa8646d.1-2build4        deb                      
 libsasl2-2              2.1.27+dfsg2-3ubuntu1.2                  deb                      
@@ -247,9 +247,9 @@ python3-minimal         3.10.6-1~22.04.1                         deb
 python3-pip-whl         22.0.2+dfsg-1ubuntu0.7                   deb                      
 python3-setuptools-whl  59.6.0-1.2ubuntu0.22.04.3                deb                      
 python3-venv            3.10.6-1~22.04.1                         deb                      
-python3.10              3.10.12-1~22.04.14                       deb                      
-python3.10-minimal      3.10.12-1~22.04.14                       deb                      
-python3.10-venv         3.10.12-1~22.04.14                       deb                      
+python3.10              3.10.12-1~22.04.15                       deb                      
+python3.10-minimal      3.10.12-1~22.04.15                       deb                      
+python3.10-venv         3.10.12-1~22.04.15                       deb                      
 pytz                    2026.1.post1                             python                   
 rarfile                 4.2                                      python                   
 readline-common         8.1.2-1                                  deb                      
