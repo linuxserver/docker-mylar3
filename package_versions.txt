@@ -98,7 +98,7 @@ ncurses-terminfo-base   6.5_p20251123-r0  apk
 netcat-openbsd          1.234.1-r0        apk                      
 nghttp2-libs            1.68.0-r0         apk                      
 nghttp3                 1.13.1-r0         apk                      
-nodejs                  24.13.0-r1        apk                      
+nodejs                  24.14.1-r0        apk                      
 oniguruma               6.9.10-r0         apk                      
 packaging               26.0              python  (+1 duplicate)   
 pillow                  12.1.1            python                   
