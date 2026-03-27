@@ -253,7 +253,7 @@ python3.10-venv         3.10.12-1~22.04.15                       deb
 pytz                    2026.1.post1                             python                   
 rarfile                 4.2                                      python                   
 readline-common         8.1.2-1                                  deb                      
-requests                2.32.5                                   python                   
+requests                2.33.0                                   python                   
 rich                    14.3.3                                   python                   
 sed                     4.8-1ubuntu2                             deb                      
 sensible-utils          0.0.17                                   deb                      
