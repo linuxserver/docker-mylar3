@@ -2,8 +2,8 @@ NAME                    VERSION           TYPE
 Simple Launcher         1.1.0.14          binary  (+5 duplicates)  
 acl-libs                2.3.2-r1          apk                      
 ada-libs                3.3.0-r0          apk                      
-alpine-baselayout       3.7.1-r8          apk                      
-alpine-baselayout-data  3.7.1-r8          apk                      
+alpine-baselayout       3.7.2-r0          apk                      
+alpine-baselayout-data  3.7.2-r0          apk                      
 alpine-keys             2.6-r0            apk                      
 alpine-release          3.23.3-r0         apk                      
 annotated-doc           0.0.4             python                   
@@ -22,7 +22,7 @@ ca-certificates-bundle  20251003-r0       apk
 catatonit               0.2.1-r0          apk                      
 certifi                 2026.2.25         python                   
 cfscrape                2.1.1             python                   
-charset-normalizer      3.4.6             python                   
+charset-normalizer      3.4.7             python                   
 cheroot                 11.1.2            python                   
 cherrypy                18.10.0           python                   
 cli                     UNKNOWN           binary                   
@@ -89,7 +89,8 @@ mako                    1.3.10            python
 markdown-it-py          4.0.0             python                   
 markupsafe              3.0.3             python                   
 mdurl                   0.1.2             python                   
-more-itertools          10.8.0            python  (+1 duplicate)   
+more-itertools          10.8.0            python                   
+more-itertools          11.0.1            python                   
 mpdecimal               4.0.1-r0          apk                      
 musl                    1.2.5-r21         apk                      
 musl-utils              1.2.5-r21         apk                      
@@ -101,14 +102,14 @@ nghttp3                 1.13.1-r0         apk
 nodejs                  24.14.1-r0        apk                      
 oniguruma               6.9.10-r0         apk                      
 packaging               26.0              python  (+1 duplicate)   
-pillow                  12.1.1            python                   
+pillow                  12.2.0            python                   
 pip                     26.0.1            python                   
 platformdirs            4.4.0             python                   
 portend                 3.2.1             python                   
 procps-ng               4.0.5-r0          apk                      
 pyc                     3.12.12-r0        apk                      
 pycryptodome            3.23.0            python                   
-pygments                2.19.2            python                   
+pygments                2.20.0            python                   
 pysocks                 1.7.1             python                   
 pystun                  0.1.0             python                   
 python-dateutil         2.9.0.post0       python                   
@@ -118,7 +119,7 @@ python3-pycache-pyc0    3.12.12-r0        apk
 pytz                    2026.1.post1      python                   
 rarfile                 4.2               python                   
 readline                8.3.1-r0          apk                      
-requests                2.33.0            python                   
+requests                2.33.1            python                   
 rich                    14.3.3            python                   
 scanelf                 1.3.8-r2          apk                      
 setuptools              82.0.1            python                   
