@@ -79,7 +79,7 @@ init_diagram: |
   "mylar3:latest" <- Base Images
 # changelog
 changelogs:
-  - {date: "06.04.26:", desc: "Switch upstream to maintained fork at https://github.com/MylarComics/mylar3. Drop `unstable` tag. Rebase to Alpine 3.23."}
+  - {date: "06.04.26:", desc: "Switch upstream to maintained fork at https://github.com/MylarComics/mylar3. Drop `unstable` tag."}
   - {date: "19.02.26:", desc: "Rebase `latest` tag based on commits to upstream `python3-dev` branch. `nightly` will build commits to upstream `1000papercuts` branch. `unstable` tag will also build commits to upstream `1000papercuts` branch, but on alpine 3.23 with python 3.12."}
   - {date: "05.02.26:", desc: "Release `unstable` tag based on commits to upstream `1000papercuts` branch."}
   - {date: "21.11.25:", desc: "Rebase to Ubuntu Jammy."}
