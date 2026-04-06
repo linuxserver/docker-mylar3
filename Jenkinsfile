@@ -19,8 +19,8 @@ pipeline {
     DOCKERHUB_TOKEN=credentials('docker-hub-ci-pat')
     QUAYIO_API_TOKEN=credentials('quayio-repo-api-token')
     GIT_SIGNING_KEY=credentials('484fbca6-9a4f-455e-b9e3-97ac98785f5f')
-    EXT_GIT_BRANCH = 'python3-dev'
-    EXT_USER = 'mylar3'
+    EXT_GIT_BRANCH = 'stable'
+    EXT_USER = 'MylarComics'
     EXT_REPO = 'mylar3'
     BUILD_VERSION_ARG = 'MYLAR3_RELEASE'
     LS_USER = 'linuxserver'
@@ -29,7 +29,7 @@ pipeline {
     DOCKERHUB_IMAGE = 'linuxserver/mylar3'
     DEV_DOCKERHUB_IMAGE = 'lsiodev/mylar3'
     PR_DOCKERHUB_IMAGE = 'lspipepr/mylar3'
-    DIST_IMAGE = 'ubuntu'
+    DIST_IMAGE = 'alpine'
     MULTIARCH='true'
     CI='true'
     CI_WEB='true'
@@ -78,6 +78,7 @@ pipeline {
            '''
         script{
           env.EXIT_STATUS = ''
+          env.CI_TEST_ATTEMPTED = ''
           env.LS_RELEASE = sh(
             script: '''docker run --rm quay.io/skopeo/stable:v1 inspect docker://ghcr.io/${LS_USER}/${CONTAINER_NAME}:latest 2>/dev/null | jq -r '.Labels.build_version' | awk '{print $3}' | grep '\\-ls' || : ''',
             returnStdout: true).trim()
@@ -96,7 +97,7 @@ pipeline {
           env.CODE_URL = 'https://github.com/' + env.LS_USER + '/' + env.LS_REPO + '/commit/' + env.GIT_COMMIT
           env.DOCKERHUB_LINK = 'https://hub.docker.com/r/' + env.DOCKERHUB_IMAGE + '/tags/'
           env.PULL_REQUEST = env.CHANGE_ID
-          env.TEMPLATED_FILES = 'Jenkinsfile README.md LICENSE .editorconfig ./.github/CONTRIBUTING.md ./.github/FUNDING.yml ./.github/ISSUE_TEMPLATE/config.yml ./.github/ISSUE_TEMPLATE/issue.bug.yml ./.github/ISSUE_TEMPLATE/issue.feature.yml ./.github/PULL_REQUEST_TEMPLATE.md ./.github/workflows/external_trigger_scheduler.yml ./.github/workflows/greetings.yml ./.github/workflows/package_trigger_scheduler.yml ./.github/workflows/call_issue_pr_tracker.yml ./.github/workflows/call_issues_cron.yml ./.github/workflows/permissions.yml ./.github/workflows/external_trigger.yml ./root/donate.txt'
+          env.TEMPLATED_FILES = 'Jenkinsfile README.md LICENSE .editorconfig ./.github/CONTRIBUTING.md ./.github/FUNDING.yml ./.github/ISSUE_TEMPLATE/config.yml ./.github/ISSUE_TEMPLATE/issue.bug.yml ./.github/ISSUE_TEMPLATE/issue.feature.yml ./.github/PULL_REQUEST_TEMPLATE.md ./.github/workflows/external_trigger_scheduler.yml ./.github/workflows/greetings.yml ./.github/workflows/package_trigger_scheduler.yml ./.github/workflows/call_issue_pr_tracker.yml ./.github/workflows/call_issues_cron.yml ./.github/workflows/permissions.yml ./.github/workflows/external_trigger.yml'
           if ( env.SYFT_IMAGE_TAG == null ) {
             env.SYFT_IMAGE_TAG = 'latest'
           }
@@ -145,21 +146,21 @@ pipeline {
     /* ########################
        External Release Tagging
        ######################## */
-    // If this is a github commit trigger determine the current commit at head
-    stage("Set ENV github_commit"){
+    // If this is a stable github release use the latest endpoint from github to determine the ext tag
+    stage("Set ENV github_stable"){
      steps{
        script{
          env.EXT_RELEASE = sh(
-           script: '''curl -H "Authorization: token ${GITHUB_TOKEN}" -s https://api.github.com/repos/${EXT_USER}/${EXT_REPO}/commits/${EXT_GIT_BRANCH} | jq -r '. | .sha' | cut -c1-8 ''',
+           script: '''curl -H "Authorization: token ${GITHUB_TOKEN}" -s https://api.github.com/repos/${EXT_USER}/${EXT_REPO}/releases/latest | jq -r '. | .tag_name' ''',
            returnStdout: true).trim()
        }
      }
     }
-    // If this is a github commit trigger Set the external release link
-    stage("Set ENV commit_link"){
+    // If this is a stable or devel github release generate the link for the build message
+    stage("Set ENV github_link"){
      steps{
        script{
-         env.RELEASE_LINK = 'https://github.com/' + env.EXT_USER + '/' + env.EXT_REPO + '/commit/' + env.EXT_RELEASE
+         env.RELEASE_LINK = 'https://github.com/' + env.EXT_USER + '/' + env.EXT_REPO + '/releases/tag/' + env.EXT_RELEASE
        }
      }
     }
@@ -602,7 +603,7 @@ pipeline {
           --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
           --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
           --label \"org.opencontainers.image.title=Mylar3\" \
-          --label \"org.opencontainers.image.description=[Mylar3](https://github.com/mylar3/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.\" \
+          --label \"org.opencontainers.image.description=[Mylar3](https://github.com/MylarComics/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.\" \
           --no-cache --pull -t ${IMAGE}:${META_TAG} --platform=linux/amd64 \
           --provenance=true --sbom=true --builder=container --load \
           --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
@@ -671,7 +672,7 @@ pipeline {
               --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
               --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
               --label \"org.opencontainers.image.title=Mylar3\" \
-              --label \"org.opencontainers.image.description=[Mylar3](https://github.com/mylar3/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.\" \
+              --label \"org.opencontainers.image.description=[Mylar3](https://github.com/MylarComics/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.\" \
               --no-cache --pull -t ${IMAGE}:amd64-${META_TAG} --platform=linux/amd64 \
               --provenance=true --sbom=true --builder=container --load \
               --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
@@ -733,7 +734,7 @@ pipeline {
               --label \"org.opencontainers.image.licenses=GPL-3.0-only\" \
               --label \"org.opencontainers.image.ref.name=${COMMIT_SHA}\" \
               --label \"org.opencontainers.image.title=Mylar3\" \
-              --label \"org.opencontainers.image.description=[Mylar3](https://github.com/mylar3/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.\" \
+              --label \"org.opencontainers.image.description=[Mylar3](https://github.com/MylarComics/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.\" \
               --no-cache --pull -f Dockerfile.aarch64 -t ${IMAGE}:arm64v8-${META_TAG} --platform=linux/arm64 \
               --provenance=true --sbom=true --builder=container --load \
               --build-arg ${BUILD_VERSION_ARG}=${EXT_RELEASE} --build-arg VERSION=\"${VERSION_TAG}\" --build-arg BUILD_DATE=${GITHUB_DATE} ."
@@ -881,6 +882,7 @@ pipeline {
           script{
             env.CI_URL = 'https://ci-tests.linuxserver.io/' + env.IMAGE + '/' + env.META_TAG + '/index.html'
             env.CI_JSON_URL = 'https://ci-tests.linuxserver.io/' + env.IMAGE + '/' + env.META_TAG + '/report.json'
+            env.CI_TEST_ATTEMPTED = 'true'
           }
           sh '''#! /bin/bash
                 set -e
@@ -1030,7 +1032,7 @@ pipeline {
                   "type": "commit",\
                   "tagger": {"name": "LinuxServer-CI","email": "ci@linuxserver.io","date": "'${GITHUB_DATE}'"}}'
               echo "Pushing New release for Tag"
-              curl -H "Authorization: token ${GITHUB_TOKEN}" -s https://api.github.com/repos/${EXT_USER}/${EXT_REPO}/commits/${EXT_RELEASE_CLEAN} | jq -r '.commit.message' > releasebody.json
+              curl -H "Authorization: token ${GITHUB_TOKEN}" -s https://api.github.com/repos/${EXT_USER}/${EXT_REPO}/releases/latest | jq -r '. |.body' > releasebody.json
               jq -n \
                 --arg tag_name "$META_TAG" \
                 --arg target_commitish "master" \
@@ -1083,98 +1085,13 @@ EOF
           ) '''
       }
     }
-    // If this is a Pull request send the CI link as a comment on it
-    stage('Pull Request Comment') {
-      when {
-        not {environment name: 'CHANGE_ID', value: ''}
-        environment name: 'EXIT_STATUS', value: ''
-      }
-      steps {
-        sh '''#! /bin/bash
-            # Function to retrieve JSON data from URL
-            get_json() {
-              local url="$1"
-              local response=$(curl -s "$url")
-              if [ $? -ne 0 ]; then
-                echo "Failed to retrieve JSON data from $url"
-                return 1
-              fi
-              local json=$(echo "$response" | jq .)
-              if [ $? -ne 0 ]; then
-                echo "Failed to parse JSON data from $url"
-                return 1
-              fi
-              echo "$json"
-            }
-
-            build_table() {
-              local data="$1"
-
-              # Get the keys in the JSON data
-              local keys=$(echo "$data" | jq -r 'to_entries | map(.key) | .[]')
-
-              # Check if keys are empty
-              if [ -z "$keys" ]; then
-                echo "JSON report data does not contain any keys or the report does not exist."
-                return 1
-              fi
-
-              # Build table header
-              local header="| Tag | Passed |\\n| --- | --- |\\n"
-
-              # Loop through the JSON data to build the table rows
-              local rows=""
-              for build in $keys; do
-                local status=$(echo "$data" | jq -r ".[\\"$build\\"].test_success")
-                if [ "$status" = "true" ]; then
-                  status="✅"
-                else
-                  status="❌"
-                fi
-                local row="| "$build" | "$status" |\\n"
-                rows="${rows}${row}"
-              done
-
-              local table="${header}${rows}"
-              local escaped_table=$(echo "$table" | sed 's/\"/\\\\"/g')
-              echo "$escaped_table"
-            }
-
-            if [[ "${CI}" = "true" ]]; then
-              # Retrieve JSON data from URL
-              data=$(get_json "$CI_JSON_URL")
-              # Create table from JSON data
-              table=$(build_table "$data")
-              echo -e "$table"
-
-              curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
-                -H "Accept: application/vnd.github.v3+json" \
-                "https://api.github.com/repos/$LS_USER/$LS_REPO/issues/$PULL_REQUEST/comments" \
-                -d "{\\"body\\": \\"I am a bot, here are the test results for this PR: \\n${CI_URL}\\n${SHELLCHECK_URL}\\n${table}\\"}"
-            else
-              curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
-                -H "Accept: application/vnd.github.v3+json" \
-                "https://api.github.com/repos/$LS_USER/$LS_REPO/issues/$PULL_REQUEST/comments" \
-                -d "{\\"body\\": \\"I am a bot, here is the pushed image/manifest for this PR: \\n\\n\\`${GITHUBIMAGE}:${META_TAG}\\`\\"}"
-            fi
-            '''
-
-      }
-    }
   }
   /* ######################
-     Send status to Discord
+     Comment on PR and Send status to Discord
      ###################### */
   post {
     always {
-      sh '''#!/bin/bash
-            rm -rf /config/.ssh/id_sign
-            rm -rf /config/.ssh/id_sign.pub
-            git config --global --unset gpg.format
-            git config --global --unset user.signingkey
-            git config --global --unset commit.gpgsign
-        '''
-      script{
+      script {
         env.JOB_DATE = sh(
             script: '''date '+%Y-%m-%dT%H:%M:%S%:z' ''',
             returnStdout: true).trim()
@@ -1217,6 +1134,87 @@ EOF
                  "username": "Jenkins"}' ${BUILDS_DISCORD} '''
         }
       }
+      script {
+        if (env.GITHUBIMAGE =~ /lspipepr/){
+          if (env.CI_TEST_ATTEMPTED == "true"){
+            sh '''#! /bin/bash
+                  # Function to retrieve JSON data from URL
+                  get_json() {
+                    local url="$1"
+                    local response=$(curl -s "$url")
+                    if [ $? -ne 0 ]; then
+                      echo "Failed to retrieve JSON data from $url"
+                      return 1
+                    fi
+                    local json=$(echo "$response" | jq .)
+                    if [ $? -ne 0 ]; then
+                      echo "Failed to parse JSON data from $url"
+                      return 1
+                    fi
+                    echo "$json"
+                  }
+
+                  build_table() {
+                    local data="$1"
+
+                    # Get the keys in the JSON data
+                    local keys=$(echo "$data" | jq -r 'to_entries | map(.key) | .[]')
+
+                    # Check if keys are empty
+                    if [ -z "$keys" ]; then
+                      echo "JSON report data does not contain any keys or the report does not exist."
+                      return 1
+                    fi
+
+                    # Build table header
+                    local header="| Tag | Passed |\\n| --- | --- |\\n"
+
+                    # Loop through the JSON data to build the table rows
+                    local rows=""
+                    for build in $keys; do
+                      local status=$(echo "$data" | jq -r ".[\\"$build\\"].test_success")
+                      if [ "$status" = "true" ]; then
+                        status="✅"
+                      else
+                        status="❌"
+                      fi
+                      local row="| "$build" | "$status" |\\n"
+                      rows="${rows}${row}"
+                    done
+
+                    local table="${header}${rows}"
+                    local escaped_table=$(echo "$table" | sed 's/\"/\\\\"/g')
+                    echo "$escaped_table"
+                  }
+
+                  if [[ "${CI}" = "true" ]]; then
+                    # Retrieve JSON data from URL
+                    data=$(get_json "$CI_JSON_URL")
+                    # Create table from JSON data
+                    table=$(build_table "$data")
+                    echo -e "$table"
+
+                    curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
+                      -H "Accept: application/vnd.github.v3+json" \
+                      "https://api.github.com/repos/$LS_USER/$LS_REPO/issues/$PULL_REQUEST/comments" \
+                      -d "{\\"body\\": \\"I am a bot, here are the test results for this PR: \\n${CI_URL}\\n${SHELLCHECK_URL}\\n${table}\\"}"
+                  else
+                    curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
+                      -H "Accept: application/vnd.github.v3+json" \
+                      "https://api.github.com/repos/$LS_USER/$LS_REPO/issues/$PULL_REQUEST/comments" \
+                      -d "{\\"body\\": \\"I am a bot, here is the pushed image/manifest for this PR: \\n\\n\\`${GITHUBIMAGE}:${META_TAG}\\`\\"}"
+                  fi
+                  '''
+          }
+        }
+      }
+      sh '''#!/bin/bash
+            rm -rf /config/.ssh/id_sign
+            rm -rf /config/.ssh/id_sign.pub
+            git config --global --unset gpg.format
+            git config --global --unset user.signingkey
+            git config --global --unset commit.gpgsign
+        '''
     }
     cleanup {
       sh '''#! /bin/bash
