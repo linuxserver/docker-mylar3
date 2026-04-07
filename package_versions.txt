@@ -29,7 +29,7 @@ cli                     UNKNOWN           binary
 cli-32                  UNKNOWN           binary                   
 cli-64                  UNKNOWN           binary                   
 cli-arm64               UNKNOWN           binary                   
-click                   8.3.1             python                   
+click                   8.3.2             python                   
 configparser            7.2.0             python                   
 coreutils               9.8-r1            apk                      
 coreutils-env           9.8-r1            apk                      
