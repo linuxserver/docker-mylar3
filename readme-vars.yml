@@ -2,7 +2,7 @@
 
 # project information
 project_name: mylar3
-project_url: "https://github.com/mylar3/mylar3"
+project_url: "https://github.com/MylarComics/mylar3"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar-icon.png"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
@@ -14,9 +14,8 @@ available_architectures:
 # development version
 development_versions: true
 development_versions_items:
-  - {tag: "latest", desc: "Commits to Mylar3 `python3-dev` branch"}
-  - {tag: "nightly", desc: "Commits to Mylar3 `1000papercuts` branch (ubuntu)"}
-  - {tag: "unstable", desc: "Commits to Mylar3 `1000papercuts` branch (alpine)"}
+  - {tag: "latest", desc: "Stable releases"}
+  - {tag: "nightly", desc: "Commits to nightly branch"}
 # container parameters
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
@@ -80,6 +79,7 @@ init_diagram: |
   "mylar3:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "06.04.26:", desc: "Switch upstream to maintained fork at https://github.com/MylarComics/mylar3. Drop `unstable` tag."}
   - {date: "19.02.26:", desc: "Rebase `latest` tag based on commits to upstream `python3-dev` branch. `nightly` will build commits to upstream `1000papercuts` branch. `unstable` tag will also build commits to upstream `1000papercuts` branch, but on alpine 3.23 with python 3.12."}
   - {date: "05.02.26:", desc: "Release `unstable` tag based on commits to upstream `1000papercuts` branch."}
   - {date: "21.11.25:", desc: "Rebase to Ubuntu Jammy."}

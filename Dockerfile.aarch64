@@ -11,8 +11,6 @@ ARG MYLAR3_RELEASE
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="aptalca"
 
-ARG DEBIAN_FRONTEND="noninteractive"
-
 RUN \
   echo "**** install build dependencies ****" && \
   apt-get update && \
@@ -32,20 +30,20 @@ RUN \
     zlib1g-dev && \
   echo "**** install mylar3 ****" && \
   if [ -z ${MYLAR3_RELEASE+x} ]; then \
-    MYLAR3_RELEASE=$(curl -sX GET https://api.github.com/repos/mylar3/mylar3/commits/python3-dev \
-      | jq -r '.sha' | cut -c1-8); \
+    MYLAR3_RELEASE=$(curl -sX GET https://api.github.com/repos/MylarComics/mylar3/releases/latest \
+      | awk '/tag_name/{print $4;exit}' FS='[""]'); \
   fi && \
   mkdir /app/mylar3 && \
   curl -o \
     /tmp/mylar3.tar.gz -L \
-    "https://github.com/mylar3/mylar3/archive/${MYLAR3_RELEASE}.tar.gz" && \
+    "https://github.com/MylarComics/mylar3/archive/${MYLAR3_RELEASE}.tar.gz" && \
   tar xf /tmp/mylar3.tar.gz -C \
     /app/mylar3/ --strip-components=1 && \
   cd /app/mylar3 && \
   python3 -m venv /lsiopy && \
   pip install -U --no-cache-dir \
     pip \
-    wheel && \
+    setuptools && \
   pip install --no-cache-dir --find-links https://wheel-index.linuxserver.io/ubuntu/ -r requirements.txt && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \

@@ -2,13 +2,13 @@
 
 # jenkins variables
 project_name: docker-mylar3
-external_type: github_commit
+external_type: github_stable
 release_type: stable
 release_tag: latest
 ls_branch: master
 repo_vars:
-  - EXT_GIT_BRANCH = 'python3-dev'
-  - EXT_USER = 'mylar3'
+  - EXT_GIT_BRANCH = 'stable'
+  - EXT_USER = 'MylarComics'
   - EXT_REPO = 'mylar3'
   - BUILD_VERSION_ARG = 'MYLAR3_RELEASE'
   - LS_USER = 'linuxserver'
@@ -24,8 +24,6 @@ repo_vars:
   - CI_PORT='8090'
   - CI_SSL='false'
   - CI_DELAY='120'
-  - CI_DOCKERENV='TZ=US/Pacific'
+  - CI_DOCKERENV='TZ=Etc/UTC'
   - CI_AUTH='user:password'
   - CI_WEBPATH=''
-sponsor_links:
-  - { name: "Mylar3", url: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EWQADB5AMVRFU" }
