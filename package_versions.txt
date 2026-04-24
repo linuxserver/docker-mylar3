@@ -15,7 +15,7 @@ beautifulsoup4          4.14.3                                   python
 bsdutils                1:2.37.2-4ubuntu3.5                      deb                      
 ca-certificates         20240203~22.04.1                         deb                      
 catatonit               0.1.7-1                                  deb                      
-certifi                 2026.2.25                                python                   
+certifi                 2026.4.22                                python                   
 cfscrape                2.1.1                                    python                   
 charset-normalizer      3.4.7                                    python                   
 cheroot                 11.1.2                                   python                   
@@ -24,7 +24,7 @@ cli                     UNKNOWN                                  binary
 cli-32                  UNKNOWN                                  binary                   
 cli-64                  UNKNOWN                                  binary                   
 cli-arm64               UNKNOWN                                  binary                   
-click                   8.3.2                                    python                   
+click                   8.3.3                                    python                   
 configparser            7.2.0                                    python                   
 coreutils               8.32-4.1ubuntu1.3                        deb                      
 cron                    3.0pl1-137ubuntu3                        deb                      
@@ -58,7 +58,7 @@ gui-64                  UNKNOWN                                  binary
 gui-arm64               UNKNOWN                                  binary                   
 gzip                    1.10-4ubuntu4.1                          deb                      
 hostname                3.23ubuntu2                              deb                      
-idna                    3.11                                     python                   
+idna                    3.13                                     python                   
 importlib-metadata      8.7.1                                    python                   
 init-system-helpers     1.62                                     deb                      
 jaraco-collections      5.2.1                                    python                   
@@ -82,7 +82,7 @@ libc-ares2              1.18.1-1ubuntu0.22.04.3                  deb
 libc-bin                2.35-0ubuntu3.13                         deb                      
 libc6                   2.35-0ubuntu3.13                         deb                      
 libcap-ng0              0.7.9-2.2build3                          deb                      
-libcap2                 1:2.44-1ubuntu0.22.04.2                  deb                      
+libcap2                 1:2.44-1ubuntu0.22.04.3                  deb                      
 libcom-err2             1.46.5-2ubuntu1.2                        deb                      
 libcrypt1               1:4.4.27-1                               deb                      
 libcurl4                7.81.0-1ubuntu1.23                       deb                      
@@ -173,15 +173,15 @@ libsmartcols1           2.37.2-4ubuntu3.5                        deb
 libsqlite3-0            3.37.2-2ubuntu0.5                        deb                      
 libss2                  1.46.5-2ubuntu1.2                        deb                      
 libssh-4                0.9.6-2ubuntu0.22.04.7                   deb                      
-libssl3                 3.0.2-0ubuntu1.21                        deb                      
+libssl3                 3.0.2-0ubuntu1.23                        deb                      
 libstdc++6              12.3.0-1ubuntu1~22.04.3                  deb                      
-libsystemd0             249.11-0ubuntu3.19                       deb                      
+libsystemd0             249.11-0ubuntu3.20                       deb                      
 libtasn1-6              4.18.0-4ubuntu0.2                        deb                      
 libtiff5                4.3.0-6ubuntu0.13                        deb                      
 libtinfo6               6.3-2ubuntu0.1                           deb                      
 libtirpc-common         1.3.2-2ubuntu0.1                         deb                      
 libtirpc3               1.3.2-2ubuntu0.1                         deb                      
-libudev1                249.11-0ubuntu3.19                       deb                      
+libudev1                249.11-0ubuntu3.20                       deb                      
 libunistring2           1.0-1                                    deb                      
 libuuid1                2.37.2-4ubuntu3.5                        deb                      
 libuv1                  1.43.0-1ubuntu0.1                        deb                      
@@ -214,7 +214,7 @@ locales                 2.35-0ubuntu3.13                         deb
 login                   1:4.8.1-2ubuntu2.2                       deb                      
 logsave                 1.46.5-2ubuntu1.2                        deb                      
 lsb-base                11.1.0ubuntu4                            deb                      
-mako                    1.3.10                                   python                   
+mako                    1.3.11                                   python                   
 markdown-it-py          4.0.0                                    python                   
 markupsafe              3.0.3                                    python                   
 mawk                    1.3.4.20200120-3                         deb                      
@@ -229,8 +229,9 @@ ncurses-bin             6.3-2ubuntu0.1                           deb
 netcat                  1.218-4ubuntu1                           deb                      
 netcat-openbsd          1.218-4ubuntu1                           deb                      
 nodejs                  12.22.9~dfsg-1ubuntu3.6                  deb                      
-openssl                 3.0.2-0ubuntu1.21                        deb                      
-packaging               26.0                                     python  (+1 duplicate)   
+openssl                 3.0.2-0ubuntu1.23                        deb                      
+packaging               26.0                                     python                   
+packaging               26.1                                     python                   
 passwd                  1:4.8.1-2ubuntu2.2                       deb                      
 perl                    5.34.0-3ubuntu1.5                        deb                      
 perl-base               5.34.0-3ubuntu1.5                        deb                      
@@ -260,13 +261,13 @@ pytz                    2026.1.post1                             python
 rarfile                 4.2                                      python                   
 readline-common         8.1.2-1                                  deb                      
 requests                2.33.1                                   python                   
-rich                    14.3.4                                   python                   
+rich                    15.0.0                                   python                   
 sed                     4.8-1ubuntu2                             deb                      
 sensible-utils          0.0.17                                   deb                      
 setuptools              82.0.1                                   python                   
 sgmllib3k               1.0.0                                    python                   
 shellingham             1.5.4                                    python                   
-simplejson              3.20.2                                   python                   
+simplejson              4.1.0                                    python                   
 six                     1.17.0                                   python                   
 soupsieve               2.8.3                                    python                   
 sysvinit-utils          3.01-1ubuntu1                            deb                      
@@ -274,7 +275,7 @@ tar                     1.34+dfsg-1ubuntu0.1.22.04.2             deb
 tempora                 5.8.1                                    python                   
 tenacity                9.1.4                                    python                   
 tomli                   2.4.0                                    python                   
-typer                   0.24.1                                   python                   
+typer                   0.24.2                                   python                   
 typer-slim              0.24.0                                   python                   
 typing-extensions       4.15.0                                   python                   
 tzdata                  2026a-0ubuntu0.22.04.1                   deb                      
