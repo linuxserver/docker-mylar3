@@ -15,7 +15,7 @@ beautifulsoup4          4.14.3                                   python
 bsdutils                1:2.37.2-4ubuntu3.5                      deb                      
 ca-certificates         20240203~22.04.1                         deb                      
 catatonit               0.1.7-1                                  deb                      
-certifi                 2026.4.22                                python                   
+certifi                 2026.5.20                                python                   
 cfscrape                2.1.1                                    python                   
 charset-normalizer      3.4.7                                    python                   
 cheroot                 11.1.2                                   python                   
@@ -24,7 +24,7 @@ cli                     UNKNOWN                                  binary
 cli-32                  UNKNOWN                                  binary                   
 cli-64                  UNKNOWN                                  binary                   
 cli-arm64               UNKNOWN                                  binary                   
-click                   8.3.3                                    python                   
+click                   8.4.1                                    python                   
 configparser            7.2.0                                    python                   
 coreutils               8.32-4.1ubuntu1.3                        deb                      
 cron                    3.0pl1-137ubuntu3                        deb                      
@@ -58,13 +58,14 @@ gui-64                  UNKNOWN                                  binary
 gui-arm64               UNKNOWN                                  binary                   
 gzip                    1.10-4ubuntu4.1                          deb                      
 hostname                3.23ubuntu2                              deb                      
-idna                    3.15                                     python                   
+idna                    3.16                                     python                   
 importlib-metadata      8.7.1                                    python                   
 init-system-helpers     1.62                                     deb                      
 jaraco-collections      5.2.1                                    python                   
 jaraco-context          6.1.0                                    python                   
 jaraco-context          6.1.2                                    python                   
-jaraco-functools        4.4.0                                    python  (+1 duplicate)   
+jaraco-functools        4.4.0                                    python                   
+jaraco-functools        4.5.0                                    python                   
 jaraco-text             4.0.0                                    python                   
 jaraco-text             4.2.0                                    python                   
 jq                      1.6-2.1ubuntu3.2                         deb                      
