@@ -12,7 +12,7 @@ apscheduler             3.11.2            python
 autocommand             2.2.2             python                   
 backports-tarfile       1.2.0             python                   
 bash                    5.3.3-r1          apk                      
-beautifulsoup4          4.14.3            python                   
+beautifulsoup4          4.15.0            python                   
 brotli-libs             1.2.0-r0          apk                      
 busybox                 1.37.0-r30        apk                      
 busybox-binsh           1.37.0-r30        apk                      
@@ -60,7 +60,7 @@ libapk                  3.0.6-r0          apk
 libattr                 2.5.2-r2          apk                      
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
-libcrypto3              3.5.6-r0          apk                      
+libcrypto3              3.5.7-r0          apk                      
 libcurl                 8.19.0-r0         apk                      
 libexpat                2.7.5-r0          apk                      
 libffi                  3.5.2-r0          apk                      
@@ -76,7 +76,7 @@ libpng                  1.6.58-r1         apk
 libproc2                4.0.5-r0          apk                      
 libpsl                  0.21.5-r3         apk                      
 libsharpyuv             1.6.0-r0          apk                      
-libssl3                 3.5.6-r0          apk                      
+libssl3                 3.5.7-r0          apk                      
 libstdc++               15.2.0-r2         apk                      
 libturbojpeg            3.1.2-r0          apk                      
 libunistring            1.4.1-r0          apk                      
