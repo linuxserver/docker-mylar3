@@ -13,9 +13,9 @@ base-passwd             3.5.52build1                             deb
 bash                    5.1-6ubuntu1.1                           deb                      
 beautifulsoup4          4.15.0                                   python                   
 bsdutils                1:2.37.2-4ubuntu3.5                      deb                      
-ca-certificates         20240203~22.04.1                         deb                      
+ca-certificates         20260601~22.04.1                         deb                      
 catatonit               0.1.7-1                                  deb                      
-certifi                 2026.5.20                                python                   
+certifi                 2026.6.17                                python                   
 cfscrape                2.1.1                                    python                   
 charset-normalizer      3.4.7                                    python                   
 cheroot                 11.1.2                                   python                   
@@ -104,10 +104,10 @@ libgcc-s1               12.3.0-1ubuntu1~22.04.3                  deb
 libgcrypt20             1.9.4-3ubuntu3.2                         deb                      
 libgif7                 5.1.9-2ubuntu0.1                         deb                      
 libgl1                  1.4.0-1                                  deb                      
-libgl1-mesa-dri         23.2.1-1ubuntu3.1~22.04.3                deb                      
-libglapi-mesa           23.2.1-1ubuntu3.1~22.04.3                deb                      
+libgl1-mesa-dri         23.2.1-1ubuntu3.1~22.04.4                deb                      
+libglapi-mesa           23.2.1-1ubuntu3.1~22.04.4                deb                      
 libglvnd0               1.4.0-1                                  deb                      
-libglx-mesa0            23.2.1-1ubuntu3.1~22.04.3                deb                      
+libglx-mesa0            23.2.1-1ubuntu3.1~22.04.4                deb                      
 libglx0                 1.4.0-1                                  deb                      
 libgmp10                2:6.2.1+dfsg-3ubuntu1                    deb                      
 libgnutls30             3.7.3-4ubuntu1.9                         deb                      
@@ -279,7 +279,7 @@ typer                   0.26.7                                   python
 typer-slim              0.24.0                                   python                   
 typing-extensions       4.15.0                                   python                   
 tzdata                  2026a-0ubuntu0.22.04.1                   deb                      
-tzlocal                 5.3.1                                    python                   
+tzlocal                 5.4.3                                    python                   
 ubuntu-keyring          2021.03.26                               deb                      
 urllib3                 1.26.20                                  python                   
 user-agent              0.1.10                                   python                   
