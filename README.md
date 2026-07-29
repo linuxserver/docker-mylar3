@@ -288,6 +288,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **17.07.26:** - Rebase to Alpine 3.24.
 * **06.04.26:** - Switch upstream to maintained fork at https://github.com/MylarComics/mylar3. Drop `unstable` tag. Rebase to Alpine 3.23.
 * **19.02.26:** - Rebase `nightly` tag to build commits from upstream `1000papercuts` branch.
 * **05.02.26:** - Release `unstable` tag based on commits to upstream `1000papercuts` branch.
