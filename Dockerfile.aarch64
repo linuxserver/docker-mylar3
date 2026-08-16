@@ -31,7 +31,7 @@ RUN \
   echo "**** install mylar3 ****" && \
   if [ -z ${MYLAR3_RELEASE+x} ]; then \
     MYLAR3_RELEASE=$(curl -sX GET https://api.github.com/repos/MylarComics/mylar3/releases/latest \
-      | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+      | jq -r '.tag_name'); \
   fi && \
   mkdir /app/mylar3 && \
   curl -o \
