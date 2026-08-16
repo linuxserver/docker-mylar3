@@ -17,7 +17,7 @@ ca-certificates         20260601~22.04.1                         deb
 catatonit               0.1.7-1                                  deb                      
 certifi                 2026.7.22                                python                   
 cfscrape                2.1.1                                    python                   
-charset-normalizer      3.5.0                                    python                   
+charset-normalizer      3.5.1                                    python                   
 cheroot                 11.1.2                                   python                   
 cherrypy                18.10.0                                  python                   
 cli                     UNKNOWN                                  binary                   
