@@ -244,7 +244,7 @@ portend                 3.2.1                                    python
 procps                  2:3.3.17-6ubuntu2.1                      deb                      
 publicsuffix            20211207.1025-1                          deb                      
 pycryptodome            3.23.0                                   python                   
-pygments                2.20.0                                   python                   
+pygments                2.21.0                                   python                   
 pysocks                 1.7.1                                    python                   
 pystun                  0.1.0                                    python                   
 python-dateutil         2.9.0.post0                              python                   
