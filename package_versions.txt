@@ -58,7 +58,7 @@ gui-64                  UNKNOWN                                  binary
 gui-arm64               UNKNOWN                                  binary                   
 gzip                    1.10-4ubuntu4.2                          deb                      
 hostname                3.23ubuntu2                              deb                      
-idna                    3.18                                     python                   
+idna                    3.19                                     python                   
 importlib-metadata      8.7.1                                    python                   
 init-system-helpers     1.62                                     deb                      
 jaraco-collections      5.2.1                                    python                   
