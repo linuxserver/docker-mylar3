@@ -46,7 +46,7 @@ gui-64                  UNKNOWN           binary
 gui-arm64               UNKNOWN           binary                   
 icu-data-en             78.1-r0           apk                      
 icu-libs                78.1-r0           apk                      
-idna                    3.18              python                   
+idna                    3.19              python                   
 importlib-metadata      8.7.1             python                   
 jaraco-collections      5.2.1             python                   
 jaraco-context          6.1.0             python                   
@@ -63,7 +63,7 @@ libbsd                  0.12.2-r0         apk
 libbz2                  1.0.8-r6          apk                      
 libcrypto3              3.5.7-r0          apk                      
 libcurl                 8.21.0-r0         apk                      
-libexpat                2.8.2-r0          apk                      
+libexpat                2.8.3-r0          apk                      
 libffi                  3.5.2-r1          apk                      
 libgcc                  15.2.0-r5         apk                      
 libidn2                 2.3.8-r0          apk                      
