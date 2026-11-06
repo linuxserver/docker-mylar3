@@ -34,7 +34,7 @@ coreutils               9.11-r0           apk
 coreutils-env           9.11-r0           apk                      
 coreutils-fmt           9.11-r0           apk                      
 coreutils-sha512sum     9.11-r0           apk                      
-curl                    8.22.0-r0         apk                      
+curl                    8.23.0-r0         apk                      
 feedparser              6.0.14            python                   
 feedparser-sgmllib      2.1.0             python                   
 findutils               4.10.0-r1         apk                      
@@ -62,8 +62,8 @@ libattr                 2.5.2-r2          apk
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
 libcrypto3              3.5.9-r0          apk                      
-libcurl                 8.22.0-r0         apk                      
-libexpat                2.9.0-r0          apk                      
+libcurl                 8.23.0-r0         apk                      
+libexpat                2.10.0-r0         apk                      
 libffi                  3.5.2-r1          apk                      
 libgcc                  15.2.0-r5         apk                      
 libidn2                 2.3.8-r0          apk                      
@@ -103,16 +103,16 @@ nodejs                  24.22.1-r1        apk
 oniguruma               6.9.10-r0         apk                      
 packaging               26.3              python  (+1 duplicate)   
 pillow                  13.0.0            python                   
-pip                     26.2.2            python                   
+pip                     26.3              python                   
 platformdirs            4.4.0             python                   
 portend                 3.2.1             python                   
 procps-ng               4.0.6-r0          apk                      
 pyc                     3.14.10-r1        apk                      
-pycryptodome            4.2.0             python                   
+pycryptodome            4.3.0             python                   
 pygments                2.21.0            python                   
 pysocks                 1.7.1             python                   
 pystun                  0.1.0             python                   
-python-dateutil         3.0.0             python                   
+python-dateutil         4.0.0             python                   
 python3                 3.14.10-r1        apk                      
 python3-pyc             3.14.10-r1        apk                      
 python3-pycache-pyc0    3.14.10-r1        apk                      
@@ -130,13 +130,13 @@ simdutf                 9.0.0-r0          apk
 simplejson              4.2.0             python                   
 six                     1.17.0            python                   
 skalibs-libs            2.15.0.0-r0       apk                      
-soupsieve               3.0.4             python                   
+soupsieve               4.0.1             python                   
 sqlite-libs             3.53.4-r0         apk                      
 ssl_client              1.37.0-r31        apk                      
 tempora                 5.13.0            python                   
 tenacity                9.2.1             python                   
 tomli                   2.4.0             python                   
-typer                   0.27.3            python                   
+typer                   0.28.0            python                   
 typer-slim              0.24.0            python                   
 typing-extensions       4.16.0            python                   
 tzdata                  2026.6            python                   
@@ -148,7 +148,7 @@ user-agent2             2021.12.11        python
 utmps-libs              0.1.3.3-r0        apk                      
 wheel                   0.46.3            python                   
 xz-libs                 5.8.4-r0          apk                      
-zc-lockfile             4.0               python                   
+zc-lockfile             4.1               python                   
 zipp                    3.23.0            python                   
 zlib                    1.3.2-r1          apk                      
 zstd-libs               1.5.7-r2          apk                      
