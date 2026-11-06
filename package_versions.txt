@@ -150,7 +150,7 @@ libpam-modules-bin      1.4.0-11ubuntu2.8                        deb
 libpam-runtime          1.4.0-11ubuntu2.8                        deb                      
 libpam0g                1.4.0-11ubuntu2.8                        deb                      
 libpciaccess0           0.16-3                                   deb                      
-libpcre2-8-0            10.39-3ubuntu0.1                         deb                      
+libpcre2-8-0            10.39-3ubuntu0.2                         deb                      
 libpcre3                2:8.39-13ubuntu0.22.04.1                 deb                      
 libpng16-16             1.6.37-3ubuntu0.7                        deb                      
 libprocps8              2:3.3.17-6ubuntu2.1                      deb                      
@@ -237,12 +237,12 @@ perl                    5.34.0-3ubuntu1.9                        deb
 perl-base               5.34.0-3ubuntu1.9                        deb                      
 pillow                  12.3.0                                   python                   
 pinentry-curses         1.1.1-1build2                            deb                      
-pip                     26.2.2                                   python                   
+pip                     26.3                                     python                   
 platformdirs            4.4.0                                    python                   
 portend                 3.2.1                                    python                   
 procps                  2:3.3.17-6ubuntu2.1                      deb                      
 publicsuffix            20211207.1025-1                          deb                      
-pycryptodome            4.2.0                                    python                   
+pycryptodome            4.3.0                                    python                   
 pygments                2.21.0                                   python                   
 pysocks                 1.7.1                                    python                   
 pystun                  0.1.0                                    python                   
@@ -274,7 +274,7 @@ tar                     1.34+dfsg-1ubuntu0.1.22.04.6             deb
 tempora                 5.13.0                                   python                   
 tenacity                9.2.1                                    python                   
 tomli                   2.4.0                                    python                   
-typer                   0.27.3                                   python                   
+typer                   0.28.0                                   python                   
 typer-slim              0.24.0                                   python                   
 typing-extensions       4.16.0                                   python                   
 tzdata                  2026.6                                   python                   
