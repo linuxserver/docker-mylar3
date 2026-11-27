@@ -16,9 +16,9 @@ beautifulsoup4          4.15.0                                   python
 bsdutils                1:2.37.2-4ubuntu3.6                      deb                      
 ca-certificates         20260816ubuntu0.22.04.2                  deb                      
 catatonit               0.1.7-1                                  deb                      
-certifi                 2026.10.23                               python                   
+certifi                 2026.11.20                               python                   
 cfscrape                2.1.1                                    python                   
-charset-normalizer      3.5.2                                    python                   
+charset-normalizer      3.5.3                                    python                   
 cheroot                 11.1.2                                   python                   
 cherrypy                18.10.0                                  python                   
 cli                     UNKNOWN                                  binary                   
@@ -98,8 +98,8 @@ libdrm-nouveau2         2.4.113-2~ubuntu0.22.04.1                deb
 libdrm-radeon1          2.4.113-2~ubuntu0.22.04.1                deb                      
 libdrm2                 2.4.113-2~ubuntu0.22.04.1                deb                      
 libedit2                3.1-20210910-1build1                     deb                      
-libelf1                 0.186-1ubuntu0.1                         deb                      
-libexpat1               2.4.7-1ubuntu0.9                         deb                      
+libelf1                 0.186-1ubuntu0.2                         deb                      
+libexpat1               2.4.7-1ubuntu0.10                        deb                      
 libext2fs2              1.46.5-2ubuntu1.2                        deb                      
 libffi8                 3.4.2-4                                  deb                      
 libgcc-s1               12.3.0-1ubuntu1~22.04.3                  deb                      
@@ -174,12 +174,12 @@ libsepol2               3.3-1build1                              deb
 libsmartcols1           2.37.2-4ubuntu3.6                        deb                      
 libsqlite3-0            3.37.2-2ubuntu0.8                        deb                      
 libss2                  1.46.5-2ubuntu1.2                        deb                      
-libssh-4                0.9.6-2ubuntu0.22.04.8                   deb                      
+libssh-4                0.9.6-2ubuntu0.22.04.9                   deb                      
 libssl3                 3.0.2-0ubuntu1.30                        deb                      
 libstdc++6              12.3.0-1ubuntu1~22.04.3                  deb                      
 libsystemd0             249.11-0ubuntu3.23                       deb                      
 libtasn1-6              4.18.0-4ubuntu0.2                        deb                      
-libtiff5                4.3.0-6ubuntu0.13                        deb                      
+libtiff5                4.3.0-6ubuntu0.14                        deb                      
 libtinfo6               6.3-2ubuntu0.3                           deb                      
 libtirpc-common         1.3.2-2ubuntu0.1                         deb                      
 libtirpc3               1.3.2-2ubuntu0.1                         deb                      
@@ -206,7 +206,7 @@ libxcb1                 1.14-3ubuntu3                            deb
 libxdmcp6               1:1.1.3-0ubuntu5                         deb                      
 libxext6                2:1.3.4-1build1                          deb                      
 libxfixes3              1:6.0.0-1                                deb                      
-libxi6                  2:1.8-1build1                            deb                      
+libxi6                  2:1.8-1ubuntu0.1                         deb                      
 libxml2                 2.9.13+dfsg-1ubuntu0.14                  deb                      
 libxshmfence1           1.3-1build4                              deb                      
 libxxf86vm1             1:1.1.4-1build3                          deb                      
@@ -232,7 +232,8 @@ netcat                  1.218-4ubuntu1                           deb
 netcat-openbsd          1.218-4ubuntu1                           deb                      
 nodejs                  12.22.9~dfsg-1ubuntu3.6                  deb                      
 openssl                 3.0.2-0ubuntu1.30                        deb                      
-packaging               26.3                                     python  (+1 duplicate)   
+packaging               26.3                                     python                   
+packaging               26.4                                     python                   
 passwd                  1:4.8.1-2ubuntu2.2                       deb                      
 perl                    5.34.0-3ubuntu1.10                       deb                      
 perl-base               5.34.0-3ubuntu1.10                       deb                      
@@ -243,7 +244,7 @@ platformdirs            4.4.0                                    python
 portend                 3.2.1                                    python                   
 procps                  2:3.3.17-6ubuntu2.1                      deb                      
 publicsuffix            20211207.1025-1                          deb                      
-pycryptodome            4.5.0                                    python                   
+pycryptodome            4.6.0                                    python                   
 pydantic                2.14.4                                   python                   
 pydantic-core           2.50.5                                   python                   
 pygments                2.21.0                                   python                   
@@ -282,7 +283,7 @@ typer-slim              0.24.0                                   python
 typing-extensions       4.16.0                                   python                   
 typing-inspection       0.4.5                                    python                   
 tzdata                  2026.6                                   python                   
-tzdata                  2026e-0ubuntu0.22.04.1                   deb                      
+tzdata                  2026f-0ubuntu0.22.04.1                   deb                      
 tzlocal                 5.4.5                                    python                   
 ubuntu-keyring          2021.03.26                               deb                      
 urllib3                 1.26.20                                  python                   
